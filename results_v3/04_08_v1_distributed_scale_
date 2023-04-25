@@ -1,0 +1,265 @@
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_2.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_2.txt
+rm: `generated_datasets/generated_distributed_beers_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_2_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_2.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_2.txt
+rm: `generated_datasets/generated_distributed_hospital_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_2_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_movies_2.txt
+Deleted err_dist_files/distributed_dirty_dist_movies_2.txt
+rm: `generated_datasets/generated_distributed_movies_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_2_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_2_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_2.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_2.txt
+rm: `generated_datasets/generated_distributed_flights_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_2_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_tax_2.txt
+Deleted err_dist_files/distributed_dirty_dist_tax_2.txt
+rm: `generated_datasets/generated_distributed_tax_2.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_2_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_8.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_8.txt
+rm: `generated_datasets/generated_distributed_beers_8.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_8_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_8.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_8.txt
+rm: `generated_datasets/generated_distributed_hospital_8.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_8_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_movies_8.txt
+Deleted err_dist_files/distributed_dirty_dist_movies_8.txt
+rm: `generated_datasets/generated_distributed_movies_8.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_8_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_8.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_8.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_8.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_8_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_8.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_8.txt
+rm: `generated_datasets/generated_distributed_flights_8.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_8_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_8.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_8.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_8.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_8_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_64.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_64.txt
+rm: `generated_datasets/generated_distributed_beers_64.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_64_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_64.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_64.txt
+rm: `generated_datasets/generated_distributed_hospital_64.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_64_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_64.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_64.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_64.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_64_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_64.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_64.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_64.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_64_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_64.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_64.txt
+rm: `generated_datasets/generated_distributed_flights_64.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_64_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_64.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_64.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_64.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_64_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_256.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_256.txt
+rm: `generated_datasets/generated_distributed_beers_256.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_256_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_256.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_256.txt
+rm: `generated_datasets/generated_distributed_hospital_256.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_256_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_256.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_256.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_256.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_256_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_256.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_256.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_256.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_256_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_256.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_256.txt
+rm: `generated_datasets/generated_distributed_flights_256.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_256_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_256.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_256.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_256.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_256_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_2048.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_2048.txt
+rm: `generated_datasets/generated_distributed_beers_2048.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_2048.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_2048.txt
+rm: `generated_datasets/generated_distributed_hospital_2048.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_2048.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_2048.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_2048.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_2048.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_2048.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_2048.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_flights_2048.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_flights_2048.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_flights_2048.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_2048.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_2048.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_2048.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_2048_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_8192.txt
+rm: `generated_datasets/generated_distributed_beers_8192.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_8192.txt
+rm: `generated_datasets/generated_distributed_hospital_8192.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_8192.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_8192.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_8192.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_rayyan_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_rayyan_8192.txt
+rm: `generated_datasets/generated_distributed_rayyan_8192.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_8192.txt
+rm: `generated_datasets/generated_distributed_flights_8192.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_8192.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_8192.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_8192.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_8192_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_beers_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_beers_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_beers_32768.parquet': Is a directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_hospital_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_hospital_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_hospital_32768.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_32768.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_32768.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_flights_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_flights_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_flights_32768.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_32768.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_32768_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_beers_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_beers_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_beers_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/beers_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_hospital_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_hospital_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_hospital_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/hospital_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/movies_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/rayyan_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_flights_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_flights_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_flights_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/flights_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_65536.parquet': No such file or directory
+./experiments/scale_up_distributed.sh: line 37: ./results/log/tax_65536_tango_distributed.log: No such file or directory
+Deleted tmp
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_beers_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_beers_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_beers_2.parquet': Is a directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_hospital_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_hospital_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_hospital_2.parquet': Is a directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_2.parquet': Is a directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_2.parquet': Is a directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_flights_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_flights_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_flights_2.parquet': Is a directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_2.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_2.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_2.parquet': Is a directory

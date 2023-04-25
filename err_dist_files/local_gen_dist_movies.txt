@@ -1,0 +1,29 @@
+Rows	 14780
+Cols	 17
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'year': 0.0, 'rating_value': 0.0, 'rating_count': 0.0}
+Dirty max	 {'year': 2019.0, 'rating_value': 9.7, 'rating_count': 1532446.0}
+Dirty mean	 {'year': 1941.3918132611636, 'rating_value': 5.8257645466847086, 'rating_count': 11309.597361299053}
+Dirty q25	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q50	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q75	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty var	 {'year': 99978.01569858614, 'rating_value': 4.462325520036704, 'rating_count': 3133287704.0204945}
+Dirty kurt	 {'year': 33.5566689527976, 'rating_value': 2.34002590523512, 'rating_count': 156.05124781248975}
+Dirty skew	 {'year': -5.946053143467417, 'rating_value': -1.705776137596734, 'rating_count': 10.322214139118145}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 7761, 'name': 7232, 'year': 108, 'release_date': 5152, 'director': 3806, 'creator': 6381, 'actors': 7214, 'full_cast': 7308, 'language': 502, 'country': 400, 'duration': 234, 'rating_value': 84, 'rating_count': 2599, 'review_count': 5293, 'genre': 777, 'filming_locations': 3191, 'description': 7630}
+Dirty mv	 {'id': 0, 'name': 0, 'year': 380, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 838, 'rating_count': 11474, 'genre': 0, 'description': 0}
+Dirty outliers	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 0, 'rating_count': 0, 'genre': 0, 'description': 0}
+Dirty typos	 {'id': 380, 'name': 34, 'year': 0, 'release_date': 380, 'director': 84, 'creator': 222, 'duration': 214, 'rating_value': 0, 'rating_count': 0, 'genre': 274, 'description': 376}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 2, 'creator': 36, 'duration': 160, 'rating_value': 0, 'rating_count': 0, 'genre': 86, 'description': 0}

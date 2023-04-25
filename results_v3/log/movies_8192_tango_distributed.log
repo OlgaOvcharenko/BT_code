@@ -1,0 +1,709 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [190, 17, 190, 190, 43, 129, 0, 0, 0, 0, 187, 419, 5737, 0, 180, 0, 188]
+Original error count [ 190   17  190  190   43  129    0    0    0    0  187  419 5737    0
+  180    0  188]
+2022-08-04 11:42:59,540 INFO spark.SparkContext: Running Spark version 3.2.0
+2022-08-04 11:42:59,635 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-08-04 11:42:59,776 INFO resource.ResourceUtils: ==============================================================
+2022-08-04 11:42:59,776 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-08-04 11:42:59,776 INFO resource.ResourceUtils: ==============================================================
+2022-08-04 11:42:59,777 INFO spark.SparkContext: Submitted application: DataGenerator_dirty_movies_8192.0
+2022-08-04 11:42:59,805 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 102400, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-08-04 11:42:59,829 INFO resource.ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+2022-08-04 11:42:59,832 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-08-04 11:42:59,917 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-04 11:42:59,917 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-04 11:42:59,918 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-04 11:42:59,918 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-04 11:42:59,918 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-04 11:43:00,256 INFO util.Utils: Successfully started service 'sparkDriver' on port 37825.
+2022-08-04 11:43:00,293 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-08-04 11:43:00,333 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-08-04 11:43:00,354 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-08-04 11:43:00,355 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-08-04 11:43:00,402 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-08-04 11:43:00,431 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-9e259d6e-5aa7-47fd-a7fe-16e2030b6b41
+2022-08-04 11:43:00,468 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2022-08-04 11:43:00,525 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-08-04 11:43:00,653 INFO util.log: Logging initialized @5596ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-08-04 11:43:00,730 INFO server.Server: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+2022-08-04 11:43:00,753 INFO server.Server: Started @5697ms
+2022-08-04 11:43:00,799 INFO server.AbstractConnector: Started ServerConnector@4c38d082{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-08-04 11:43:00,799 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-08-04 11:43:00,827 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1ea6764c{/jobs,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,830 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@42a21757{/jobs/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,831 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@659ac561{/jobs/job,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,835 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2ab7b4ad{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,836 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5f694e24{/stages,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,837 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e75a3cc{/stages/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,838 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@584b4c1f{/stages/stage,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,841 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@93d3870{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,842 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@473a7637{/stages/pool,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,843 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a824989{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,844 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4f72692d{/storage,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,845 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d921973{/storage/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,846 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@33979ac5{/storage/rdd,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,847 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2d669e7e{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,848 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@48dafdc5{/environment,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,850 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@238264d7{/environment/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,851 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5b683969{/executors,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,852 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@25f8aa0c{/executors/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,853 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@655f6f7e{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,855 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@760deaf1{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,866 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@228f48af{/static,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,867 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@250aab4e{/,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,868 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5988a5ed{/api,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,869 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@863ba75{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,870 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@da1bd14{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-08-04 11:43:00,872 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://tango.dm.isds.tugraz.at:4040
+2022-08-04 11:43:01,232 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at charlie.dm.isds.tugraz.at/129.27.206.4:8032
+2022-08-04 11:43:01,454 INFO yarn.Client: Requesting a new application from cluster with 9 NodeManagers
+2022-08-04 11:43:01,906 INFO conf.Configuration: resource-types.xml not found
+2022-08-04 11:43:01,907 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-08-04 11:43:01,917 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (122880 MB per container)
+2022-08-04 11:43:01,918 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+2022-08-04 11:43:01,918 INFO yarn.Client: Setting up container launch context for our AM
+2022-08-04 11:43:01,920 INFO yarn.Client: Setting up the launch environment for our AM container
+2022-08-04 11:43:01,925 INFO yarn.Client: Preparing resources for our AM container
+2022-08-04 11:43:02,528 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2022-08-04 11:43:04,842 INFO yarn.Client: Uploading resource file:/tmp/spark-6c3ed32c-f8ed-4b16-ab26-b86c6cc0dc8a/__spark_libs__18094148913885781327.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0214/__spark_libs__18094148913885781327.zip
+2022-08-04 11:43:07,662 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0214/pyspark.zip
+2022-08-04 11:43:08,815 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0214/py4j-0.10.9.2-src.zip
+2022-08-04 11:43:10,105 INFO yarn.Client: Uploading resource file:/tmp/spark-6c3ed32c-f8ed-4b16-ab26-b86c6cc0dc8a/__spark_conf__1555948884849903664.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0214/__spark_conf__.zip
+2022-08-04 11:43:11,227 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-04 11:43:11,227 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-04 11:43:11,227 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-04 11:43:11,228 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-04 11:43:11,228 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-04 11:43:11,249 INFO yarn.Client: Submitting application application_1659444800769_0214 to ResourceManager
+2022-08-04 11:43:11,291 INFO impl.YarnClientImpl: Submitted application application_1659444800769_0214
+2022-08-04 11:43:12,294 INFO yarn.Client: Application report for application_1659444800769_0214 (state: ACCEPTED)
+2022-08-04 11:43:12,297 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659606191264
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0214/
+	 user: oovcharenko
+2022-08-04 11:43:13,299 INFO yarn.Client: Application report for application_1659444800769_0214 (state: ACCEPTED)
+2022-08-04 11:43:14,301 INFO yarn.Client: Application report for application_1659444800769_0214 (state: ACCEPTED)
+2022-08-04 11:43:15,303 INFO yarn.Client: Application report for application_1659444800769_0214 (state: ACCEPTED)
+2022-08-04 11:43:16,304 INFO yarn.Client: Application report for application_1659444800769_0214 (state: ACCEPTED)
+2022-08-04 11:43:17,306 INFO yarn.Client: Application report for application_1659444800769_0214 (state: RUNNING)
+2022-08-04 11:43:17,308 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 129.27.206.20
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659606191264
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0214/
+	 user: oovcharenko
+2022-08-04 11:43:17,310 INFO cluster.YarnClientSchedulerBackend: Application application_1659444800769_0214 has started running.
+2022-08-04 11:43:17,321 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41745.
+2022-08-04 11:43:17,321 INFO netty.NettyBlockTransferService: Server created on tango.dm.isds.tugraz.at:41745
+2022-08-04 11:43:17,323 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-08-04 11:43:17,331 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 41745, None)
+2022-08-04 11:43:17,336 INFO storage.BlockManagerMasterEndpoint: Registering block manager tango.dm.isds.tugraz.at:41745 with 434.4 MiB RAM, BlockManagerId(driver, tango.dm.isds.tugraz.at, 41745, None)
+2022-08-04 11:43:17,342 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 41745, None)
+2022-08-04 11:43:17,344 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, tango.dm.isds.tugraz.at, 41745, None)
+2022-08-04 11:43:17,426 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> charlie.dm.isds.tugraz.at, PROXY_URI_BASES -> http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0214), /proxy/application_1659444800769_0214
+2022-08-04 11:43:17,566 INFO ui.ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:17,569 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@60034931{/metrics/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:18,290 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2022-08-04 11:43:21,818 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.20:46298) with ID 1,  ResourceProfileId 0
+2022-08-04 11:43:21,988 INFO storage.BlockManagerMasterEndpoint: Registering block manager sierra.dm.isds.tugraz.at:40289 with 59.8 GiB RAM, BlockManagerId(1, sierra.dm.isds.tugraz.at, 40289, None)
+2022-08-04 11:43:24,201 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.5:36604) with ID 2,  ResourceProfileId 0
+2022-08-04 11:43:24,357 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.13:52030) with ID 3,  ResourceProfileId 0
+2022-08-04 11:43:24,365 INFO storage.BlockManagerMasterEndpoint: Registering block manager delta.dm.isds.tugraz.at:33895 with 59.8 GiB RAM, BlockManagerId(2, delta.dm.isds.tugraz.at, 33895, None)
+2022-08-04 11:43:24,422 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+2022-08-04 11:43:24,529 INFO storage.BlockManagerMasterEndpoint: Registering block manager lima.dm.isds.tugraz.at:38949 with 59.8 GiB RAM, BlockManagerId(3, lima.dm.isds.tugraz.at, 38949, None)
+2022-08-04 11:43:24,626 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2022-08-04 11:43:24,629 INFO internal.SharedState: Warehouse path is 'file:/home/oovcharenko/benchmark/BS_OlgaOvcharenko/spark-warehouse'.
+2022-08-04 11:43:24,644 INFO ui.ServerInfo: Adding filter to /SQL: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:24,646 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@16a749aa{/SQL,null,AVAILABLE,@Spark}
+2022-08-04 11:43:24,647 INFO ui.ServerInfo: Adding filter to /SQL/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:24,648 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@389efa77{/SQL/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:24,648 INFO ui.ServerInfo: Adding filter to /SQL/execution: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:24,650 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5d2e140b{/SQL/execution,null,AVAILABLE,@Spark}
+2022-08-04 11:43:24,650 INFO ui.ServerInfo: Adding filter to /SQL/execution/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:24,651 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@b629cca{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-08-04 11:43:24,652 INFO ui.ServerInfo: Adding filter to /static/sql: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 11:43:24,653 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@42ef0aaa{/static/sql,null,AVAILABLE,@Spark}
+Created integer part 9.41115117073059
+Created data 9.609773397445679
+Num of rows 60538880
+
+ID
+Set values
+Random sample 0.9360146522521973
+Create errors lists sample 2.172637939453125
+
+NAME
+Set values
+Random sample 0.06459259986877441
+Create errors lists sample 1.3081483840942383
+
+YEAR
+Set values
+Random sample 0.9312410354614258
+Create errors lists sample 2.963517427444458
+
+RELEASE_DATE
+Set values
+Random sample 0.9362998008728027
+Create errors lists sample 2.544255495071411
+
+DIRECTOR
+Set values
+Random sample 0.17398881912231445
+Create errors lists sample 1.166330337524414
+
+CREATOR
+Set values
+Random sample 0.5121879577636719
+Create errors lists sample 1.4349331855773926
+
+DURATION
+Set values
+Random sample 0.48139524459838867
+Create errors lists sample 1.4275555610656738
+
+RATING_VALUE
+Set values
+Random sample 2.2154197692871094
+Create errors lists sample 4.460207462310791
+
+RATING_COUNT
+Set values
+Random sample 40.04023313522339
+Create errors lists sample 77.32479214668274
+
+GENRE
+Set values
+Random sample 0.6495606899261475
+Create errors lists sample 1.9422483444213867
+
+DESCRIPTION
+Set values
+Random sample 0.931225061416626
+Create errors lists sample 3.3863003253936768
+Create error DATAFRAME  2.4340925216674805
+Create spark obj 2.4389336109161377
+Set values after join, TOTAL 2.5240817070007324
+Create error DATAFRAME  0.27747488021850586
+Create spark obj 0.2825284004211426
+Set values after join, TOTAL 0.33446764945983887
+Create error DATAFRAME  2.380995750427246
+Create spark obj 2.3865320682525635
+Set values after join, TOTAL 2.4402971267700195
+Create error DATAFRAME  0.26204538345336914
+Create spark obj 0.2666151523590088
+Set values after join, TOTAL 0.32077765464782715
+Create error DATAFRAME  0.23366761207580566
+Create spark obj 0.23806476593017578
+Set values after join, TOTAL 0.29027223587036133
+Create error DATAFRAME  0.21797823905944824
+Create spark obj 0.22200322151184082
+Set values after join, TOTAL 0.27244138717651367
+Create error DATAFRAME  0.21359467506408691
+Create spark obj 0.2177143096923828
+Set values after join, TOTAL 0.2687869071960449
+Create error DATAFRAME  0.19108366966247559
+Create spark obj 0.19524526596069336
+Set values after join, TOTAL 0.24771976470947266
+Create error DATAFRAME  0.19113659858703613
+Create spark obj 0.19576811790466309
+Set values after join, TOTAL 0.24741053581237793
+Create error DATAFRAME  0.18353724479675293
+Create spark obj 0.18738365173339844
+Set values after join, TOTAL 0.23960423469543457
+Create error DATAFRAME  0.24485540390014648
+Create spark obj 0.249528169631958
+Set values after join, TOTAL 0.3031787872314453
+Replacements director
+REPLACEMENT start
+REPLACEMENT Num repl 	8192
+
+
+REPLACEMENT Create replacement DATAFRAME  994.6529219150543
+REPLACEMENT Create spark obj 994.658878326416
+REPLACEMENT all 994.702885389328
+Replacements creator
+REPLACEMENT start
+REPLACEMENT Num repl 	147456
+
+
+REPLACEMENT Create replacement DATAFRAME  484.28476881980896
+REPLACEMENT Create spark obj 484.28894114494324
+REPLACEMENT all 484.3348340988159
+Replacements duration
+REPLACEMENT start
+REPLACEMENT Num repl 	655360
+
+
+REPLACEMENT Create replacement DATAFRAME  516.3944592475891
+REPLACEMENT Create spark obj 516.3983943462372
+REPLACEMENT all 516.4453983306885
+Replacements genre
+REPLACEMENT start
+REPLACEMENT Num repl 	352256
+
+
+REPLACEMENT Create replacement DATAFRAME  495.9955050945282
+REPLACEMENT Create spark obj 495.9991886615753
+REPLACEMENT all 496.05709886550903
+Swaps numerical done
+Swaps str
+Generated dataset
+[2718.098s][warning][gc,alloc] broadcast-exchange-18: Retried waiting for GCLocker too often allocating 4194306 words
+2022-08-04 12:28:14,440 ERROR datasources.FileFormatWriter: Aborting job fbc73d73-4a0e-49c3-b0e2-d666ad535d0a.
+java.util.concurrent.ExecutionException: org.apache.spark.util.SparkFatalException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.doExecuteBroadcast(BroadcastExchangeExec.scala:208)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeBroadcast$1(SparkPlan.scala:197)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.executeBroadcast(SparkPlan.scala:193)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:142)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.buildBuffers(InMemoryRelation.scala:252)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.cachedColumnBuffers(InMemoryRelation.scala:221)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.filteredCachedBatches(InMemoryTableScanExec.scala:144)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.inputRDD$lzycompute(InMemoryTableScanExec.scala:95)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.inputRDD(InMemoryTableScanExec.scala:81)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.doExecute(InMemoryTableScanExec.scala:155)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:186)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:186)
+	at org.apache.spark.sql.execution.datasources.DataSource.writeAndRead(DataSource.scala:537)
+	at org.apache.spark.sql.execution.command.CreateDataSourceTableAsSelectCommand.saveDataIntoTable(createDataSourceTables.scala:228)
+	at org.apache.spark.sql.execution.command.CreateDataSourceTableAsSelectCommand.run(createDataSourceTables.scala:182)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:110)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:110)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:106)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:106)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:93)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:91)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:128)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
+	at org.apache.spark.sql.DataFrameWriter.createTable(DataFrameWriter.scala:689)
+	at org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:667)
+	at org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:565)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.spark.util.SparkFatalException
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.$anonfun$relationFuture$1(BroadcastExchangeExec.scala:183)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$1(SQLExecution.scala:185)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Traceback (most recent call last):
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/test_scale_up_distributed.py", line 23, in <module>
+    generated_data = scale_modify.run_distributed(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/scale_modify.py", line 188, in run_distributed
+    data_gen.clean_data_scaled.write.format("parquet").mode("overwrite").option("path", output_path).saveAsTable("dirty")
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 806, in saveAsTable
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip/py4j/java_gateway.py", line 1309, in __call__
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
+    return FD
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o1775.saveAsTable.
+: org.apache.spark.SparkException: Job aborted.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.jobAbortedError(QueryExecutionErrors.scala:496)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:251)
+	at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:186)
+	at org.apache.spark.sql.execution.datasources.DataSource.writeAndRead(DataSource.scala:537)
+	at org.apache.spark.sql.execution.command.CreateDataSourceTableAsSelectCommand.saveDataIntoTable(createDataSourceTables.scala:228)
+	at org.apache.spark.sql.execution.command.CreateDataSourceTableAsSelectCommand.run(createDataSourceTables.scala:182)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:113)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:111)
+	at org.apache.spark.sql.execution.command.DataWritingCommandExec.executeCollect(commands.scala:125)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:110)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:110)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:106)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:106)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:93)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:91)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:128)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
+	at org.apache.spark.sql.DataFrameWriter.createTable(DataFrameWriter.scala:689)
+	at org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:667)
+	at org.apache.spark.sql.DataFrameWriter.saveAsTable(DataFrameWriter.scala:565)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.ExecutionException: org.apache.spark.util.SparkFatalException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.doExecuteBroadcast(BroadcastExchangeExec.scala:208)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeBroadcast$1(SparkPlan.scala:197)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.executeBroadcast(SparkPlan.scala:193)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:142)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.SortMergeJoinExec.doExecute(SortMergeJoinExec.scala:126)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.joins.BroadcastHashJoinExec.doExecute(BroadcastHashJoinExec.scala:169)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.ProjectExec.doExecute(basicPhysicalOperators.scala:93)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.buildBuffers(InMemoryRelation.scala:252)
+	at org.apache.spark.sql.execution.columnar.CachedRDDBuilder.cachedColumnBuffers(InMemoryRelation.scala:221)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.filteredCachedBatches(InMemoryTableScanExec.scala:144)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.inputRDD$lzycompute(InMemoryTableScanExec.scala:95)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.inputRDD(InMemoryTableScanExec.scala:81)
+	at org.apache.spark.sql.execution.columnar.InMemoryTableScanExec.doExecute(InMemoryTableScanExec.scala:155)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:184)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:222)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:219)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.write(FileFormatWriter.scala:186)
+	... 44 more
+Caused by: org.apache.spark.util.SparkFatalException
+	at org.apache.spark.sql.execution.exchange.BroadcastExchangeExec.$anonfun$relationFuture$1(BroadcastExchangeExec.scala:183)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$1(SQLExecution.scala:185)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+
+
+real	45m20.979s
+user	16m21.989s
+sys	3m28.742s

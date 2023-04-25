@@ -1,0 +1,167 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [0, 0, 0, 911, 1558, 1100, 1351]
+Original error count [   0    0    0  911 1558 1100 1351]
+Error distribution computation: 1.197089433670044
+
+Scale dataset: 0.20572376251220703
+
+Generated dataset
+Errors to scaled dataset: 22.239192247390747
+
+Save dataset: 0.7651081085205078
+
+Error count [[    0.     0.     0. 58304. 99712. 70400. 86464.]]
+Computed new error distribution: 0.450697660446167
+
+--------------------------------------------------------
+tuple_id
+Mean original dirty: 	 1188.5
+Mean generated dirty: 	 1188.5
+
+Var original dirty: 	 470646.0
+Var generated dirty: 	 470451.0104364638
+
+Q25 original dirty: 	 594.75
+Q25 generated dirty: 	 594.4499999999971
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 1188.5
+Q50 generated dirty: 	 1188.5
+
+Q75 original dirty: 	 1782.25
+Q75 generated dirty: 	 1188.5
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 0.0
+Skew generated dirty: 	 0.0
+
+Kurtosis original dirty: 	 -1.2000000000000002
+Kurtosis generated dirty: 	 -1.2000004250369476
+
+Min original dirty: 	 1
+Min generated dirty: 	 1.0
+
+Max original dirty: 	 2376
+Max generated dirty: 	 2376.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+tuple_id
+Distinct original dirty: 	 2376
+Distinct original clean: 	 2376
+Distinct estimated dirty (whole dataset): 	 152064, distinct with ratio 	 152064
+Distinct estimated dirty (replicate + errors): 	 2376.0
+Distinct generated dirty: 	 2376
+
+--------------------------------------------------------
+src
+Distinct original dirty: 	 38
+Distinct original clean: 	 38
+Distinct estimated dirty (whole dataset): 	 40, distinct with ratio 	 40
+Distinct estimated dirty (replicate + errors): 	 38.0
+Distinct generated dirty: 	 38
+
+--------------------------------------------------------
+flight
+Distinct original dirty: 	 100
+Distinct original clean: 	 100
+Distinct estimated dirty (whole dataset): 	 100, distinct with ratio 	 100
+Distinct estimated dirty (replicate + errors): 	 100.0
+Distinct generated dirty: 	 100
+
+--------------------------------------------------------
+sched_dep_time
+Distinct original dirty: 	 138
+Distinct original clean: 	 79
+Distinct estimated dirty (whole dataset): 	 370, distinct with ratio 	 370
+Distinct estimated dirty (replicate + errors): 	 1275.0
+Distinct generated dirty: 	 1254
+
+Replacements original dirty: 	 18
+Replacements generated dirty: 	 1152
+
+Unique replacements count - original dirty: 	 1
+Unique replacements count - generated dirty: 	 1 
+
+Typos original dirty: 	 893
+Typos generated dirty: 	 57152
+
+Distinct estimated typo: 	 1196
+Unique typos count - original dirty: 	 59
+Unique typos count - generated dirty: 	 1184
+
+--------------------------------------------------------
+act_dep_time
+Distinct original dirty: 	 291
+Distinct original clean: 	 91
+Distinct estimated dirty (whole dataset): 	 1038, distinct with ratio 	 1038
+Distinct estimated dirty (replicate + errors): 	 1283.0
+Distinct generated dirty: 	 1268
+
+Replacements original dirty: 	 208
+Replacements generated dirty: 	 13312
+
+Unique replacements count - original dirty: 	 26
+Unique replacements count - generated dirty: 	 26 
+
+Typos original dirty: 	 1350
+Typos generated dirty: 	 86400
+
+Distinct estimated typo: 	 1192
+Unique typos count - original dirty: 	 206
+Unique typos count - generated dirty: 	 1185
+
+--------------------------------------------------------
+sched_arr_time
+Distinct original dirty: 	 240
+Distinct original clean: 	 94
+Distinct estimated dirty (whole dataset): 	 774, distinct with ratio 	 774
+Distinct estimated dirty (replicate + errors): 	 1737.0
+Distinct generated dirty: 	 1711
+
+Replacements original dirty: 	 20
+Replacements generated dirty: 	 1280
+
+Unique replacements count - original dirty: 	 8
+Unique replacements count - generated dirty: 	 8 
+
+Typos original dirty: 	 1080
+Typos generated dirty: 	 69120
+
+Distinct estimated typo: 	 1643
+Unique typos count - original dirty: 	 146
+Unique typos count - generated dirty: 	 1626
+
+--------------------------------------------------------
+act_arr_time
+Distinct original dirty: 	 329
+Distinct original clean: 	 96
+Distinct estimated dirty (whole dataset): 	 1163, distinct with ratio 	 1163
+Distinct estimated dirty (replicate + errors): 	 1586.0
+Distinct generated dirty: 	 1562
+
+Replacements original dirty: 	 68
+Replacements generated dirty: 	 4352
+
+Unique replacements count - original dirty: 	 14
+Unique replacements count - generated dirty: 	 14 
+
+Typos original dirty: 	 1283
+Typos generated dirty: 	 82112
+
+Distinct estimated typo: 	 1490
+Unique typos count - original dirty: 	 240
+Unique typos count - generated dirty: 	 1478
+
+Validation of scaled dataset: 0.0006146430969238281
+
+Time elapsed 24.865978240966797
+
+(152064, 7)
++++++++++++++++++++++++++++++++
+
+real	0m26.196s
+user	0m40.110s
+sys	0m3.898s

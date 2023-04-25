@@ -1,0 +1,280 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+Error distribution computation: 6.019423961639404
+
+Scale dataset: 0.5518043041229248
+
+INFO: Added less new unique MV (7) then expected unique MV (9).
+INFO: Added less new unique MV (5) then expected unique MV (6).
+INFO: Rounding error between actual replacements added (1604) and expected (1800).
+INFO: Rounding error between actual replacements added (1787) and expected (1800).
+INFO: Rounding error between actual replacements added (4) and expected (4.5).
+INFO: Rounding error between actual replacements added (12) and expected (13.5).
+Generated dataset
+Errors to scaled dataset: 27.40023136138916
+
+Save dataset: 5.408637285232544
+
+Error count [[1232. 3140.    0.    0.    0.  904. 2687. 1608.  900.  900.   12.  846.
+   900.    0.  900.]]
+Computed new error distribution: 3.171816825866699
+
+--------------------------------------------------------
+area_code
+Mean original dirty: 	 560.831715
+Mean generated dirty: 	 560.8884522222222
+
+Var original dirty: 	 58145.10348067616
+Var generated dirty: 	 58150.02710934563
+
+Q25 original dirty: 	 317.0
+Q25 generated dirty: 	 317.0
+
+Q50 original dirty: 	 571.0
+Q50 generated dirty: 	 571.0
+
+Q75 original dirty: 	 787.0
+Q75 generated dirty: 	 571.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 0.05745327947772957
+Skew generated dirty: 	 0.056694141022408204
+
+Kurtosis original dirty: 	 -1.3145588129341748
+Kurtosis generated dirty: 	 -1.3148985451371926
+
+Min original dirty: 	 201.0
+Min generated dirty: 	 201.0
+
+Max original dirty: 	 989.0
+Max generated dirty: 	 989.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+zip
+Mean original dirty: 	 50095.125655
+Mean generated dirty: 	 50094.976781132675
+
+Var original dirty: 	 200837024141.40744
+Var generated dirty: 	 218447366991.60873
+
+Q25 original dirty: 	 21727.0
+Q25 generated dirty: 	 21742.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 49839.0
+Q50 generated dirty: 	 49862.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 74818.0
+Q75 generated dirty: 	 49862.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 444.09351089627035
+Skew generated dirty: 	 471.2974723057519
+
+Kurtosis original dirty: 	 198141.69839647817
+Kurtosis generated dirty: 	 223074.51661383227
+
+Min original dirty: 	 501.0
+Min generated dirty: 	 501.0
+
+Max original dirty: 	 200000000.0
+Max generated dirty: 	 221274045.00485337
+
+--------------------------------------------------------
+--------------------------------------------------------
+salary
+Mean original dirty: 	 53005.850015
+Mean generated dirty: 	 52880.12047307076
+
+Var original dirty: 	 50781087769.62623
+Var generated dirty: 	 43048817979.661
+
+Q25 original dirty: 	 25000.0
+Q25 generated dirty: 	 25000.0
+
+Q50 original dirty: 	 50000.0
+Q50 generated dirty: 	 50000.0
+
+Q75 original dirty: 	 80000.0
+Q75 generated dirty: 	 50000.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 436.2471652327904
+Skew generated dirty: 	 531.8871221562755
+
+Kurtosis original dirty: 	 193487.72706361904
+Kurtosis generated dirty: 	 288489.5635140631
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 100000000.0
+Max generated dirty: 	 112589467.25456262
+
+--------------------------------------------------------
+--------------------------------------------------------
+rate
+Mean original dirty: 	 4.475095952357
+Mean generated dirty: 	 4.845827499184335
+
+Var original dirty: 	 10130.89791331265
+Var generated dirty: 	 27002.396456275288
+
+Q25 original dirty: 	 2.2
+Q25 generated dirty: 	 2.1885417
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 4.75
+Q50 generated dirty: 	 4.75
+
+Q75 original dirty: 	 6.25
+Q75 generated dirty: 	 4.75
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 446.6965191070783
+Skew generated dirty: 	 273.7372790674518
+
+Kurtosis original dirty: 	 199691.73582855987
+Kurtosis generated dirty: 	 74951.97653226808
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 45000.0
+Max generated dirty: 	 45000.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+single_exemp
+Mean original dirty: 	 830.67196
+Mean generated dirty: 	 830.2829144444445
+
+Var original dirty: 	 2982988.7154833344
+Var generated dirty: 	 2984438.7113346523
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 1040.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 3.767302451369809
+Skew generated dirty: 	 3.769251210431881
+
+Kurtosis original dirty: 	 20.33364906584868
+Kurtosis generated dirty: 	 20.344065568604837
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 12750.0
+Max generated dirty: 	 12750.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+married_exemp
+Mean original dirty: 	 1652.15198
+Mean generated dirty: 	 1652.5931377777779
+
+Var original dirty: 	 11582043.820881182
+Var generated dirty: 	 11592438.882861888
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 2080.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 3.5913084518732052
+Skew generated dirty: 	 3.5925715683501167
+
+Kurtosis original dirty: 	 18.416817090634183
+Kurtosis generated dirty: 	 18.42119218350759
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 24500.0
+Max generated dirty: 	 24500.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+child_exemp
+Mean original dirty: 	 602.7901
+Mean generated dirty: 	 601.98736
+
+Var original dirty: 	 1114237.5683998314
+Var generated dirty: 	 1113572.2142449121
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 1000.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 1.5920598053140178
+Skew generated dirty: 	 1.5943730158421487
+
+Kurtosis original dirty: 	 1.0869967396792393
+Kurtosis generated dirty: 	 1.0943269636102575
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 3300.0
+Max generated dirty: 	 3300.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+f_name
+Distinct original dirty: 	 10002
+Distinct original clean: 	 10000
+Distinct estimated dirty (whole dataset): 	 10002, distinct with ratio 	 10002
+Distinct estimated dirty (replicate + errors): 	 10013.0
+Distinct generated dirty: 	 10015
+
+Swaps original dirty: 	 2
+Swaps generated dirty: 	 8.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 12
+
+Traceback (most recent call last):
+  File "./test_scale_up_local.py", line 23, in <module>
+    generated_data = scale_modify.run_default(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/scale_modify.py", line 123, in run_default
+    compare_error_dist.compare_error_distributions_statistics(cols=data_gen.clean_data_scaled.columns,
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/compare_error_dist.py", line 10, in compare_error_distributions_statistics
+    compare_distincts(cols=cols, original=original, generated=generated)
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/compare_error_dist.py", line 52, in compare_distincts
+    assert round(original.swaps_col_count[i] * original.scaling_factor) == \
+AssertionError: In f_name changed swaps number, original - 9, gen - [ 8. 12.  0.  0.  0.  4.  0.  0.  0.  0.  4.  4.  0.  0.  0.]
+
+real	0m44.593s
+user	1m25.742s
+sys	0m10.789s

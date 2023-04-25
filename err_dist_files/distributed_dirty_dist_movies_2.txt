@@ -1,0 +1,29 @@
+Rows	 14780
+Cols	 17
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'year': 0.0, 'rating_value': 0.0, 'rating_count': 0.0}
+Dirty max	 {'year': inf, 'rating_value': inf, 'rating_count': 1306429.0}
+Dirty mean	 {'year': inf, 'rating_value': inf, 'rating_count': 10958.684100135319}
+Dirty q25	 {'year': 1985.0, 'rating_value': 5.699999809265137, 'rating_count': 0.0}
+Dirty q50	 {'year': 1985.0, 'rating_value': 5.699999809265137, 'rating_count': 0.0}
+Dirty q75	 {'year': 0.0, 'rating_value': 0.0, 'rating_count': 0.0}
+Dirty var	 {'year': nan, 'rating_value': nan, 'rating_count': 2900193621.047708}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'actors': 9104, 'full_cast': 6686, 'language': 414, 'country': 308, 'review_count': 5934, 'filming_locations': 3089, 'id': 6969, 'name': 7864, 'year': 114, 'release_date': 4036, 'rating_value': 88, 'rating_count': 2191, 'description': 10168, 'director': 4084, 'creator': 5746, 'duration': 233, 'genre': 780}
+Dirty mv	 {'id': 0, 'name': 0, 'year': 380, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 838, 'rating_count': 11474, 'genre': 0, 'description': 0}
+Dirty outliers	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 0, 'creator': 0, 'actors': 0, 'full_cast': 0, 'language': 0, 'country': 0, 'duration': 0, 'rating_value': 0, 'rating_count': 0, 'review_count': 0, 'genre': 0, 'filming_locations': 0, 'description': 0}
+Dirty typos	 {'id': 380, 'name': 34, 'year': 0, 'release_date': 380, 'director': 84, 'creator': 222, 'duration': 214, 'rating_value': 0, 'rating_count': 0, 'genre': 274, 'description': 376}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 2, 'creator': 36, 'duration': 160, 'rating_value': 0, 'rating_count': 0, 'genre': 86, 'description': 0}

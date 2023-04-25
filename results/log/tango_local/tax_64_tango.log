@@ -1,0 +1,506 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+Error distribution computation: 6.172421932220459
+
+Scale dataset: 37.27847504615784
+
+INFO: Added less new unique MV (13) then expected unique MV (128).
+INFO: Added less new unique MV (6) then expected unique MV (8).
+Generated dataset
+Errors to scaled dataset: 5038.554290056229
+
+Save dataset: 66.3727514743805
+
+Error count [[17536. 44672.     0.     0.     0. 12864. 38400. 25664. 12800. 12800.
+    192. 12032. 12800.     0. 12800.]]
+Computed new error distribution: 47.95166611671448
+
+--------------------------------------------------------
+area_code
+Mean original dirty: 	 560.831715
+Mean generated dirty: 	 560.831715
+
+Var original dirty: 	 58145.10348067616
+Var generated dirty: 	 58144.81729772256
+
+Q25 original dirty: 	 317.0
+Q25 generated dirty: 	 317.0
+
+Q50 original dirty: 	 571.0
+Q50 generated dirty: 	 571.0
+
+Q75 original dirty: 	 787.0
+Q75 generated dirty: 	 571.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 0.05745327947772957
+Skew generated dirty: 	 0.057452855309992466
+
+Kurtosis original dirty: 	 -1.3145588129341748
+Kurtosis generated dirty: 	 -1.3145559937923117
+
+Min original dirty: 	 201.0
+Min generated dirty: 	 201.0
+
+Max original dirty: 	 989.0
+Max generated dirty: 	 989.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+zip
+Mean original dirty: 	 50095.125655
+Mean generated dirty: 	 50466.67449187499
+
+Var original dirty: 	 200837024141.40744
+Var generated dirty: 	 541888662445.33136
+
+Q25 original dirty: 	 21727.0
+Q25 generated dirty: 	 21737.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 49839.0
+Q50 generated dirty: 	 49848.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 74818.0
+Q75 generated dirty: 	 49848.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 444.09351089627035
+Skew generated dirty: 	 537.9618044546634
+
+Kurtosis original dirty: 	 198141.69839647817
+Kurtosis generated dirty: 	 289901.1720709118
+
+Min original dirty: 	 501.0
+Min generated dirty: 	 -149707.0
+
+Max original dirty: 	 200000000.0
+Max generated dirty: 	 396746553.9674655
+
+--------------------------------------------------------
+--------------------------------------------------------
+salary
+Mean original dirty: 	 53005.850015
+Mean generated dirty: 	 53020.504352578115
+
+Var original dirty: 	 50781087769.62623
+Var generated dirty: 	 78508218760.30502
+
+Q25 original dirty: 	 25000.0
+Q25 generated dirty: 	 25000.0
+
+Q50 original dirty: 	 50000.0
+Q50 generated dirty: 	 50000.0
+
+Q75 original dirty: 	 80000.0
+Q75 generated dirty: 	 50000.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 436.2471652327904
+Skew generated dirty: 	 591.6937806107439
+
+Kurtosis original dirty: 	 193487.72706361904
+Kurtosis generated dirty: 	 381164.44687018916
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 -42493.0
+
+Max original dirty: 	 100000000.0
+Max generated dirty: 	 199853523.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+rate
+Mean original dirty: 	 4.475095952357
+Mean generated dirty: 	 4.903491551496549
+
+Var original dirty: 	 10130.89791331265
+Var generated dirty: 	 29585.79160697819
+
+Q25 original dirty: 	 2.2
+Q25 generated dirty: 	 2.1885417
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 4.75
+Q50 generated dirty: 	 4.75
+
+Q75 original dirty: 	 6.25
+Q75 generated dirty: 	 4.75
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 446.6965191070783
+Skew generated dirty: 	 261.5185527406626
+
+Kurtosis original dirty: 	 199691.73582855987
+Kurtosis generated dirty: 	 68408.04701210266
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 45000.0
+Max generated dirty: 	 45000.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+single_exemp
+Mean original dirty: 	 830.67196
+Mean generated dirty: 	 829.82316375
+
+Var original dirty: 	 2982988.7154833344
+Var generated dirty: 	 2980708.22142896
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 1040.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 3.767302451369809
+Skew generated dirty: 	 3.7692578360227196
+
+Kurtosis original dirty: 	 20.33364906584868
+Kurtosis generated dirty: 	 20.35337950775243
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 12750.0
+Max generated dirty: 	 12750.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+married_exemp
+Mean original dirty: 	 1652.15198
+Mean generated dirty: 	 1652.15198
+
+Var original dirty: 	 11582043.820881182
+Var generated dirty: 	 11581986.815504808
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 2080.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 3.5913084518732052
+Skew generated dirty: 	 3.591281937857067
+
+Kurtosis original dirty: 	 18.416817090634183
+Kurtosis generated dirty: 	 18.416334336209587
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 24500.0
+Max generated dirty: 	 24500.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+child_exemp
+Mean original dirty: 	 602.7901
+Mean generated dirty: 	 602.188866015625
+
+Var original dirty: 	 1114237.5683998314
+Var generated dirty: 	 1113491.176552924
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 1000.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 1.5920598053140178
+Skew generated dirty: 	 1.593588396610186
+
+Kurtosis original dirty: 	 1.0869967396792393
+Kurtosis generated dirty: 	 1.0920794580988131
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 3300.0
+Max generated dirty: 	 3300.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+f_name
+Distinct original dirty: 	 10002
+Distinct original clean: 	 10000
+Distinct estimated dirty (whole dataset): 	 10008, distinct with ratio 	 10008
+Distinct estimated dirty (replicate + errors): 	 10013.0
+Distinct generated dirty: 	 10015
+
+Swaps original dirty: 	 2
+Swaps generated dirty: 	 128.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 189
+
+Typos original dirty: 	 272
+Typos generated dirty: 	 17408
+
+Distinct estimated typo: 	 13
+Unique typos count - original dirty: 	 13
+Unique typos count - generated dirty: 	 13
+
+--------------------------------------------------------
+l_name
+Distinct original dirty: 	 10004
+Distinct original clean: 	 10000
+Distinct estimated dirty (whole dataset): 	 10017, distinct with ratio 	 10017
+Distinct estimated dirty (replicate + errors): 	 10042.0
+Distinct generated dirty: 	 10045
+
+Swaps original dirty: 	 3
+Swaps generated dirty: 	 192.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 190
+
+Typos original dirty: 	 695
+Typos generated dirty: 	 44480
+
+Distinct estimated typo: 	 42
+Unique typos count - original dirty: 	 38
+Unique typos count - generated dirty: 	 42
+
+--------------------------------------------------------
+gender
+Distinct original dirty: 	 2
+Distinct original clean: 	 2
+Distinct estimated dirty (whole dataset): 	 2, distinct with ratio 	 2
+Distinct estimated dirty (replicate + errors): 	 2.0
+Distinct generated dirty: 	 2
+
+--------------------------------------------------------
+area_code
+Distinct original dirty: 	 273
+Distinct original clean: 	 273
+Distinct estimated dirty (whole dataset): 	 273, distinct with ratio 	 273
+Distinct estimated dirty (replicate + errors): 	 273.0
+Distinct generated dirty: 	 273
+
+--------------------------------------------------------
+phone
+Distinct original dirty: 	 197555
+Distinct original clean: 	 197555
+Distinct estimated dirty (whole dataset): 	 12342790, distinct with ratio 	 12342790
+Distinct estimated dirty (replicate + errors): 	 197555.0
+Distinct generated dirty: 	 197555
+
+--------------------------------------------------------
+city
+Distinct original dirty: 	 17859
+Distinct original clean: 	 17829
+Distinct estimated dirty (whole dataset): 	 32849, distinct with ratio 	 32849
+Distinct estimated dirty (replicate + errors): 	 17880.0
+Distinct generated dirty: 	 17880
+
+Swaps original dirty: 	 1
+Swaps generated dirty: 	 64.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 185
+
+Typos original dirty: 	 200
+Typos generated dirty: 	 12800
+
+Distinct estimated typo: 	 51
+Unique typos count - original dirty: 	 29
+Unique typos count - generated dirty: 	 51
+
+--------------------------------------------------------
+state
+Distinct original dirty: 	 53
+Distinct original clean: 	 52
+Distinct estimated dirty (whole dataset): 	 53, distinct with ratio 	 53
+Distinct estimated dirty (replicate + errors): 	 53.0
+Distinct generated dirty: 	 53
+
+Replacements original dirty: 	 400
+Replacements generated dirty: 	 25600
+
+Unique replacements count - original dirty: 	 52
+Unique replacements count - generated dirty: 	 52 
+
+Typos original dirty: 	 200
+Typos generated dirty: 	 12800
+
+Distinct estimated typo: 	 1
+Unique typos count - original dirty: 	 1
+Unique typos count - generated dirty: 	 1
+
+--------------------------------------------------------
+zip
+Distinct original dirty: 	 39062
+Distinct original clean: 	 39069
+Distinct estimated dirty (whole dataset): 	 108987, distinct with ratio 	 108987
+Distinct estimated dirty (replicate + errors): 	 39133.0
+Distinct generated dirty: 	 39072
+
+Replacements original dirty: 	 400
+Replacements generated dirty: 	 25600
+
+Unique replacements count - original dirty: 	 396
+Unique replacements count - generated dirty: 	 396 
+
+Outliers original dirty: 	 1
+Outliers generated dirty: 	 64
+
+Unique outliers count - original dirty: 	 1
+Unique outliers count - generated dirty: 	 3
+
+--------------------------------------------------------
+marital_status
+Distinct original dirty: 	 2
+Distinct original clean: 	 2
+Distinct estimated dirty (whole dataset): 	 2, distinct with ratio 	 2
+Distinct estimated dirty (replicate + errors): 	 2.0
+Distinct generated dirty: 	 2
+
+Replacements original dirty: 	 200
+Replacements generated dirty: 	 12800
+
+Unique replacements count - original dirty: 	 1
+Unique replacements count - generated dirty: 	 1 
+
+--------------------------------------------------------
+has_child
+Distinct original dirty: 	 2
+Distinct original clean: 	 2
+Distinct estimated dirty (whole dataset): 	 2, distinct with ratio 	 2
+Distinct estimated dirty (replicate + errors): 	 2.0
+Distinct generated dirty: 	 2
+
+Replacements original dirty: 	 200
+Replacements generated dirty: 	 12800
+
+Unique replacements count - original dirty: 	 1
+Unique replacements count - generated dirty: 	 1 
+
+--------------------------------------------------------
+salary
+Distinct original dirty: 	 23
+Distinct original clean: 	 20
+Distinct estimated dirty (whole dataset): 	 212, distinct with ratio 	 212
+Distinct estimated dirty (replicate + errors): 	 212.0
+Distinct generated dirty: 	 40
+
+Swaps original dirty: 	 1
+Swaps generated dirty: 	 64.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 20
+
+MV original dirty: 	 1
+MV generated dirty: 	 64
+
+Distinct estimated mv: 	 128
+Unique MV count - original dirty: 	 2
+Unique MV count - generated dirty: 	 13
+
+Outliers original dirty: 	 1
+Outliers generated dirty: 	 64
+
+Unique outliers count - original dirty: 	 1
+Unique outliers count - generated dirty: 	 9
+
+--------------------------------------------------------
+rate
+Distinct original dirty: 	 280
+Distinct original clean: 	 278
+Distinct estimated dirty (whole dataset): 	 280, distinct with ratio 	 280
+Distinct estimated dirty (replicate + errors): 	 286.0
+Distinct generated dirty: 	 283
+
+Swaps original dirty: 	 1
+Swaps generated dirty: 	 64.0
+
+Unique swaps count - original dirty: 	 4
+Unique swaps count - generated dirty: 	 73
+
+MV original dirty: 	 187
+MV generated dirty: 	 11968
+
+Distinct estimated mv: 	 8
+Unique MV count - original dirty: 	 2
+Unique MV count - generated dirty: 	 6
+
+--------------------------------------------------------
+single_exemp
+Distinct original dirty: 	 29
+Distinct original clean: 	 28
+Distinct estimated dirty (whole dataset): 	 29, distinct with ratio 	 29
+Distinct estimated dirty (replicate + errors): 	 29.0
+Distinct generated dirty: 	 29
+
+MV original dirty: 	 200
+MV generated dirty: 	 12800
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+married_exemp
+Distinct original dirty: 	 28
+Distinct original clean: 	 28
+Distinct estimated dirty (whole dataset): 	 28, distinct with ratio 	 28
+Distinct estimated dirty (replicate + errors): 	 28.0
+Distinct generated dirty: 	 28
+
+--------------------------------------------------------
+child_exemp
+Distinct original dirty: 	 27
+Distinct original clean: 	 26
+Distinct estimated dirty (whole dataset): 	 27, distinct with ratio 	 27
+Distinct estimated dirty (replicate + errors): 	 27.0
+Distinct generated dirty: 	 27
+
+MV original dirty: 	 200
+MV generated dirty: 	 12800
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+Numerical swaps original dirty: 	 1
+Numerical swaps generated dirty: 	 64
+
+Numerical swaps original dirty: 	 3
+Numerical swaps generated dirty: 	 192
+
+Validation of scaled dataset: 0.0009298324584960938
+
+Time elapsed 5196.336815357208
+
+(12800000, 15)
++++++++++++++++++++++++++++++++
+
+real	86m38.808s
+user	245m52.594s
+sys	1m36.991s

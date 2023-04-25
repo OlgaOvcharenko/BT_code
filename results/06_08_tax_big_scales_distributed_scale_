@@ -1,0 +1,21 @@
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_1024.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_2048.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_2048.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_2048.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_8192.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_8192.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_8192.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_32768.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_32768.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_32768.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_tax_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_tax_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_tax_65536.parquet': No such file or directory
+Deleted tmp

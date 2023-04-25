@@ -1,0 +1,29 @@
+Rows	 12800000
+Cols	 15
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'area_code': 201.0, 'zip': -149707.0, 'salary': -42493.0, 'rate': 0.0, 'single_exemp': 0.0, 'married_exemp': 0.0, 'child_exemp': 0.0}
+Dirty max	 {'area_code': 989.0, 'zip': 396746553.9674655, 'salary': 199853523.0, 'rate': 45000.0, 'single_exemp': 12750.0, 'married_exemp': 24500.0, 'child_exemp': 3300.0}
+Dirty mean	 {'zip': 50466.67449187499, 'salary': 53020.504352578115, 'area_code': 560.831715, 'rate': 4.903491551496549, 'single_exemp': 829.82316375, 'married_exemp': 1652.15198, 'child_exemp': 602.188866015625}
+Dirty q25	 {'area_code': 571.0, 'zip': 49848.0, 'salary': 50000.0, 'rate': 4.75, 'single_exemp': 0.0, 'married_exemp': 0.0, 'child_exemp': 0.0}
+Dirty q50	 {'area_code': 571.0, 'zip': 49848.0, 'salary': 50000.0, 'rate': 4.75, 'single_exemp': 0.0, 'married_exemp': 0.0, 'child_exemp': 0.0}
+Dirty q75	 {'area_code': 571.0, 'zip': 49848.0, 'salary': 50000.0, 'rate': 4.75, 'single_exemp': 0.0, 'married_exemp': 0.0, 'child_exemp': 0.0}
+Dirty var	 {'area_code': 58144.81729772256, 'zip': 541888662445.33136, 'salary': 78508218760.30502, 'rate': 29585.79160697819, 'single_exemp': 2980708.22142896, 'married_exemp': 11581986.815504808, 'child_exemp': 1113491.176552924}
+Dirty kurt	 {'area_code': -1.3145559937923117, 'zip': 289901.1720709118, 'salary': 381164.44687018916, 'rate': 68408.04701210266, 'single_exemp': 20.35337950775243, 'married_exemp': 18.416334336209587, 'child_exemp': 1.0920794580988131}
+Dirty skew	 {'area_code': 0.057452855309992466, 'zip': 537.9618044546634, 'salary': 591.6937806107439, 'rate': 261.5185527406626, 'single_exemp': 3.7692578360227196, 'married_exemp': 3.591281937857067, 'child_exemp': 1.593588396610186}
+
+Clean distincts	 {}
+Dirty distincts	 {'f_name': 10015, 'l_name': 10045, 'gender': 2, 'area_code': 273, 'phone': 197555, 'city': 17880, 'state': 53, 'zip': 39072, 'marital_status': 2, 'has_child': 2, 'salary': 40, 'rate': 283, 'single_exemp': 29, 'married_exemp': 28, 'child_exemp': 27}
+Dirty mv	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 0, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 64, 'rate': 11968, 'single_exemp': 12800, 'child_exemp': 12800}
+Dirty outliers	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 0, 'zip': 64, 'marital_status': 0, 'has_child': 0, 'salary': 64, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0}
+Dirty typos	 {'f_name': 17408, 'l_name': 44480, 'city': 12800, 'state': 12800, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0, 'area_code': 0, 'married_exemp': 0}
+Dirty swaps	 256
+Dirty replacements	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 25600, 'zip': 25600, 'marital_status': 12800, 'has_child': 12800, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0}

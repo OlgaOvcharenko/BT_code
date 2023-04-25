@@ -1,0 +1,314 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [0, 0, 0, 0, 2410, 755, 1005, 0, 0, 127, 127]
+Original error count [   0    0    0    0 2410  755 1005    0    0  127  127]
+Error distribution computation: 0.2847926616668701
+
+Scale dataset: 0.005867958068847656
+
+Generated dataset
+Errors to scaled dataset: 0.3224375247955322
+
+Save dataset: 0.040175437927246094
+
+Error count [[   0.    0.    0.    0. 4820. 1510. 2010.    0.    0.  254.  254.]]
+Computed new error distribution: 0.04976606369018555
+
+--------------------------------------------------------
+index
+Mean original dirty: 	 1205.5
+Mean generated dirty: 	 1205.5
+
+Var original dirty: 	 484209.1666666667
+Var generated dirty: 	 484108.6874870305
+
+Q25 original dirty: 	 603.25
+Q25 generated dirty: 	 603.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 1205.5
+Q50 generated dirty: 	 1205.5
+
+Q75 original dirty: 	 1807.75
+Q75 generated dirty: 	 1205.5
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 0.0
+Skew generated dirty: 	 0.0
+
+Kurtosis original dirty: 	 -1.2
+Kurtosis generated dirty: 	 -1.200000310233812
+
+Min original dirty: 	 1.0
+Min generated dirty: 	 1.0
+
+Max original dirty: 	 2410.0
+Max generated dirty: 	 2410.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+id
+Mean original dirty: 	 1431.1132780082987
+Mean generated dirty: 	 1431.1132780082987
+
+Var original dirty: 	 566196.0133146965
+Var generated dirty: 	 566078.520886119
+
+Q25 original dirty: 	 808.25
+Q25 generated dirty: 	 808.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 1453.5
+Q50 generated dirty: 	 1453.5
+
+Q75 original dirty: 	 2075.75
+Q75 generated dirty: 	 1453.5
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 -0.12124608814405236
+Skew generated dirty: 	 -0.12120833442021045
+
+Kurtosis original dirty: 	 -1.0870419585691438
+Kurtosis generated dirty: 	 -1.0871594646630183
+
+Min original dirty: 	 1.0
+Min generated dirty: 	 1.0
+
+Max original dirty: 	 2692.0
+Max generated dirty: 	 2692.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+abv
+Mean original dirty: 	 0.04118174273858921
+Mean generated dirty: 	 0.04014149377593361
+
+Var original dirty: 	 0.0008980757146867987
+Var generated dirty: 	 0.0009115832125430201
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.05
+Q50 generated dirty: 	 0.05
+
+Q75 original dirty: 	 0.062
+Q75 generated dirty: 	 0.05
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 -0.3278652549222659
+Skew generated dirty: 	 -0.2688179086103014
+
+Kurtosis original dirty: 	 -1.2075102635328885
+Kurtosis generated dirty: 	 -1.244736698416187
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 0.12
+Max generated dirty: 	 0.128
+
+--------------------------------------------------------
+--------------------------------------------------------
+ibu
+Mean original dirty: 	 24.90124481327801
+Mean generated dirty: 	 14.584439834024897
+
+Var original dirty: 	 836.3148593879451
+Var generated dirty: 	 637.5004426203677
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 18.0
+Q50 generated dirty: 	 0.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 41.0
+Q75 generated dirty: 	 0.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 1.0716358945105509
+Skew generated dirty: 	 1.829413060504898
+
+Kurtosis original dirty: 	 0.28845008367939773
+Kurtosis generated dirty: 	 2.6494455735623577
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 138.0
+Max generated dirty: 	 138.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+brewery_id
+Mean original dirty: 	 231.74979253112033
+Mean generated dirty: 	 231.74979253112033
+
+Var original dirty: 	 24864.74974051319
+Var generated dirty: 	 24859.590008257426
+
+Q25 original dirty: 	 93.0
+Q25 generated dirty: 	 93.0
+
+Q50 original dirty: 	 205.0
+Q50 generated dirty: 	 205.0
+
+Q75 original dirty: 	 366.0
+Q75 generated dirty: 	 205.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 0.30797442456619417
+Skew generated dirty: 	 0.3078785271928983
+
+Kurtosis original dirty: 	 -1.0875489650257673
+Kurtosis generated dirty: 	 -1.0876659450919501
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 557.0
+Max generated dirty: 	 557.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+index
+Distinct original dirty: 	 2410
+Distinct original clean: 	 2410
+Distinct estimated dirty (whole dataset): 	 4820, distinct with ratio 	 4820
+Distinct estimated dirty (replicate + errors): 	 2410.0
+Distinct generated dirty: 	 2410
+
+--------------------------------------------------------
+id
+Distinct original dirty: 	 2410
+Distinct original clean: 	 2410
+Distinct estimated dirty (whole dataset): 	 4820, distinct with ratio 	 4820
+Distinct estimated dirty (replicate + errors): 	 2410.0
+Distinct generated dirty: 	 2410
+
+--------------------------------------------------------
+beer_name
+Distinct original dirty: 	 2304
+Distinct original clean: 	 2304
+Distinct estimated dirty (whole dataset): 	 4486, distinct with ratio 	 4486
+Distinct estimated dirty (replicate + errors): 	 2304.0
+Distinct generated dirty: 	 2304
+
+--------------------------------------------------------
+style
+Distinct original dirty: 	 100
+Distinct original clean: 	 100
+Distinct estimated dirty (whole dataset): 	 106, distinct with ratio 	 106
+Distinct estimated dirty (replicate + errors): 	 100.0
+Distinct generated dirty: 	 100
+
+--------------------------------------------------------
+ounces
+Distinct original dirty: 	 1
+Distinct original clean: 	 7
+Distinct estimated dirty (whole dataset): 	 1, distinct with ratio 	 1
+Distinct estimated dirty (replicate + errors): 	 8.0
+Distinct generated dirty: 	 1
+
+MV original dirty: 	 2410
+MV generated dirty: 	 4820
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+abv
+Distinct original dirty: 	 69
+Distinct original clean: 	 75
+Distinct estimated dirty (whole dataset): 	 72, distinct with ratio 	 72
+Distinct estimated dirty (replicate + errors): 	 76.0
+Distinct generated dirty: 	 75
+
+MV original dirty: 	 755
+MV generated dirty: 	 1510
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+ibu
+Distinct original dirty: 	 108
+Distinct original clean: 	 108
+Distinct estimated dirty (whole dataset): 	 118, distinct with ratio 	 118
+Distinct estimated dirty (replicate + errors): 	 109.0
+Distinct generated dirty: 	 100
+
+MV original dirty: 	 1005
+MV generated dirty: 	 2010
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+brewery_id
+Distinct original dirty: 	 558
+Distinct original clean: 	 558
+Distinct estimated dirty (whole dataset): 	 635, distinct with ratio 	 635
+Distinct estimated dirty (replicate + errors): 	 558.0
+Distinct generated dirty: 	 558
+
+--------------------------------------------------------
+brewery_name
+Distinct original dirty: 	 551
+Distinct original clean: 	 551
+Distinct estimated dirty (whole dataset): 	 623, distinct with ratio 	 623
+Distinct estimated dirty (replicate + errors): 	 551.0
+Distinct generated dirty: 	 551
+
+--------------------------------------------------------
+city
+Distinct original dirty: 	 475
+Distinct original clean: 	 384
+Distinct estimated dirty (whole dataset): 	 572, distinct with ratio 	 572
+Distinct estimated dirty (replicate + errors): 	 550.0
+Distinct generated dirty: 	 550
+
+Typos original dirty: 	 127
+Typos generated dirty: 	 254
+
+Distinct estimated typo: 	 166
+Unique typos count - original dirty: 	 96
+Unique typos count - generated dirty: 	 166
+
+--------------------------------------------------------
+state
+Distinct original dirty: 	 52
+Distinct original clean: 	 51
+Distinct estimated dirty (whole dataset): 	 52, distinct with ratio 	 52
+Distinct estimated dirty (replicate + errors): 	 52.0
+Distinct generated dirty: 	 52
+
+Typos original dirty: 	 127
+Typos generated dirty: 	 254
+
+Distinct estimated typo: 	 1
+Unique typos count - original dirty: 	 1
+Unique typos count - generated dirty: 	 1
+
+Validation of scaled dataset: 0.0012612342834472656
+
+Time elapsed 0.71431565284729
+
+(4820, 11)
++++++++++++++++++++++++++++++++
+
+real	0m2.065s
+user	0m2.964s
+sys	0m3.933s

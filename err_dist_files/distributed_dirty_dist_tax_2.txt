@@ -1,0 +1,29 @@
+Rows	 400000
+Cols	 15
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'area_code': 201.0, 'married_exemp': 0.0, 'single_exemp': 0.0, 'child_exemp': 0.0, 'zip': 0.0, 'salary': 0.0, 'rate': 0.0}
+Dirty max	 {'area_code': 989.0, 'married_exemp': 24500.0, 'single_exemp': inf, 'child_exemp': inf, 'zip': 99950.0, 'salary': 100000.0, 'rate': 45000.0}
+Dirty mean	 {'zip': 49095.1907925, 'salary': 52506.1875225, 'area_code': 560.831715, 'married_exemp': 1652.15198, 'single_exemp': inf, 'child_exemp': inf, 'rate': 4.80870988283962}
+Dirty q25	 {'area_code': 320.0, 'married_exemp': 0.0, 'single_exemp': 0.0, 'child_exemp': 0.0, 'zip': 23517.0, 'salary': 30000.0, 'rate': 2.3732757568359375}
+Dirty q50	 {'area_code': 320.0, 'married_exemp': 0.0, 'single_exemp': 0.0, 'child_exemp': 0.0, 'zip': 23517.0, 'salary': 30000.0, 'rate': 2.3732757568359375}
+Dirty q75	 {'area_code': 201.0, 'married_exemp': 0.0, 'single_exemp': 0.0, 'child_exemp': 0.0, 'zip': 0.0, 'salary': 0.0, 'rate': 0.0}
+Dirty var	 {'area_code': 58144.95811755411, 'married_exemp': 11582014.865699243, 'single_exemp': nan, 'child_exemp': nan, 'zip': 935207965.3883733, 'salary': 833600918.3544282, 'rate': 25315.289634415898}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'gender': 2, 'area_code': 264, 'phone': 201399, 'married_exemp': 31, 'single_exemp': 29, 'child_exemp': 26, 'state': 54, 'zip': 52262, 'marital_status': 2, 'has_child': 2, 'salary': 24, 'rate': 343, 'f_name': 12467, 'l_name': 6961, 'city': 19053}
+Dirty mv	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 0, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 2, 'rate': 374, 'single_exemp': 400, 'child_exemp': 400}
+Dirty outliers	 {'f_name': 0, 'l_name': 0, 'gender': 0, 'area_code': 0, 'phone': 0, 'city': 0, 'state': 0, 'zip': 2, 'marital_status': 0, 'has_child': 0, 'salary': 2, 'rate': 0, 'single_exemp': 0, 'married_exemp': 0, 'child_exemp': 0}
+Dirty typos	 {'f_name': 544, 'l_name': 1390, 'city': 400, 'state': 400, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0, 'area_code': 0, 'married_exemp': 0}
+Dirty swaps	 8
+Dirty replacements	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 800, 'zip': 800, 'marital_status': 400, 'has_child': 400, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0}

@@ -1,0 +1,36 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+Error distribution computation: 6.074888706207275
+
+Scale dataset: 0.3965423107147217
+
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/error_sequence_generator.py", line 556, in _get_local_outliers
+    new_outliers_dict = AddOutliers().run(col_name=col, num_outliers=num_outliers,
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/errors.py", line 363, in run
+    new_outlier_value = int(new_outlier_value + correction) if err_dist.schema[col_name] is np.int else new_outlier_value + correction
+ValueError: cannot convert float NaN to integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./test_scale_up_local.py", line 23, in <module>
+    generated_data = scale_modify.run_default(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/scale_modify.py", line 101, in run_default
+    data_gen.clean_data_scaled, new_error_dist = generate_errors(scaled_data=data_gen.clean_data_scaled,
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/error_sequence_generator.py", line 536, in generate_errors
+    results = t.get()
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 771, in get
+    raise self._value
+ValueError: cannot convert float NaN to integer
+INFO: Added less new unique MV (6) then expected unique MV (8).
+
+real	0m32.500s
+user	1m7.675s
+sys	0m9.910s

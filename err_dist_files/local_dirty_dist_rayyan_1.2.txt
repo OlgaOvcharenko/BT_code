@@ -1,0 +1,29 @@
+Rows	 1000
+Cols	 11
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'id': 1266.0, 'article_jvolumn': -1.0, 'article_jissue': -1.0}
+Dirty max	 {'id': 982590.0, 'article_jvolumn': 7457.0, 'article_jissue': 9453.0}
+Dirty mean	 {'id': 502095.623, 'article_jvolumn': 64.715, 'article_jissue': 39.642}
+Dirty q25	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 2.0}
+Dirty q50	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 2.0}
+Dirty q75	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 2.0}
+Dirty var	 {'id': 84434379035.87675, 'article_jvolumn': 75572.1259009009, 'article_jissue': 239559.58341941942}
+Dirty kurt	 {'id': -1.259668834791877, 'article_jvolumn': 533.8594235601482, 'article_jissue': 241.3708834534667}
+Dirty skew	 {'id': -0.05686882377518066, 'article_jvolumn': 21.011846873485332, 'article_jissue': 15.146669550346783}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 1000, 'article_title': 1000, 'article_language': 34, 'journal_title': 722, 'jounral_abbreviation': 423, 'journal_issn': 617, 'article_jvolumn': 188, 'article_jissue': 39, 'article_jcreated_at': 288, 'article_pagination': 874, 'author_list': 943}
+Dirty mv	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 26, 'article_jissue': 64, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty outliers	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty typos	 {'article_title': 17, 'journal_title': 11, 'journal_issn': 14, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 598, 'article_pagination': 38, 'author_list': 101, 'id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 224, 'article_pagination': 0, 'author_list': 0}

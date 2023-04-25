@@ -1,0 +1,29 @@
+Rows	 2000
+Cols	 11
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'id': 1266.0, 'article_jvolumn': -1.0, 'article_jissue': -1.0}
+Dirty max	 {'id': 982590.0, 'article_jvolumn': 7457.0, 'article_jissue': 9453.0}
+Dirty mean	 {'id': 502095.623, 'article_jvolumn': 66.484, 'article_jissue': 40.398}
+Dirty q25	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty q50	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty q75	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty var	 {'id': 84392140727.20448, 'article_jvolumn': 79233.09829314657, 'article_jissue': 247679.56237718862}
+Dirty kurt	 {'id': -1.2595214073972896, 'article_jvolumn': 485.4888440739867, 'article_jissue': 237.21376429442708}
+Dirty skew	 {'id': -0.056826113438871215, 'article_jvolumn': 19.854470329742693, 'article_jissue': 15.06314374546853}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 1000, 'article_title': 1028, 'article_language': 34, 'journal_title': 736, 'jounral_abbreviation': 423, 'journal_issn': 628, 'article_jvolumn': 190, 'article_jissue': 42, 'article_jcreated_at': 398, 'article_pagination': 933, 'author_list': 1098}
+Dirty mv	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 44, 'article_jissue': 106, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty outliers	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty typos	 {'article_title': 28, 'journal_title': 18, 'journal_issn': 24, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 996, 'article_pagination': 64, 'author_list': 168, 'id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 448, 'article_pagination': 0, 'author_list': 0}

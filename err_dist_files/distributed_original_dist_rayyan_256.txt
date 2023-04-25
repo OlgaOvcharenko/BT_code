@@ -1,0 +1,83 @@
+Rows	 1000
+Cols	 11
+Clean min	 id                 1266
+article_jvolumn      -1
+article_jissue       -1
+dtype: int64
+Clean max	 id                 982590
+article_jvolumn      7457
+article_jissue       9453
+dtype: int64
+Clean mean	 id                 502095.623
+article_jvolumn        67.903
+article_jissue         47.636
+dtype: float64
+Clean q25	 id                 247310.25
+article_jvolumn        12.00
+article_jissue          0.75
+Name: 0.25, dtype: float64
+Clean q50	 id                 501140.5
+article_jvolumn        29.0
+article_jissue          3.0
+Name: 0.5, dtype: float64
+Clean q75	 id                 756450.0
+article_jvolumn        64.0
+article_jissue          6.0
+Name: 0.75, dtype: float64
+Clean var	 id                 8.443438e+10
+article_jvolumn    7.935560e+04
+article_jissue     2.946840e+05
+dtype: float64
+Clean kurt	 id                  -1.259669
+article_jvolumn    485.289344
+article_jissue     192.883040
+dtype: float64
+Clean skew	 id                 -0.056869
+article_jvolumn    19.825824
+article_jissue     13.621733
+dtype: float64
+
+Dirty min	 id                 1266.0
+article_jvolumn       0.0
+article_jissue        0.0
+dtype: float64
+Dirty max	 id                 982590.0
+article_jvolumn      7457.0
+article_jissue       9453.0
+dtype: float64
+Dirty mean	 id                 502095.623
+article_jvolumn        67.921
+article_jissue         47.683
+dtype: float64
+Dirty q25	 id                 501140.5
+article_jvolumn        29.0
+article_jissue          3.0
+Name: 0.5, dtype: float64
+Dirty q50	 id                 501140.5
+article_jvolumn        29.0
+article_jissue          3.0
+Name: 0.5, dtype: float64
+Dirty q75	 id                 756450.0
+article_jvolumn        64.0
+article_jissue          6.0
+Name: 0.75, dtype: float64
+Dirty var	 id                 8.443438e+10
+article_jvolumn    7.935313e+04
+article_jissue     2.946795e+05
+dtype: float64
+Dirty kurt	 id                  -1.259669
+article_jvolumn    485.314643
+article_jissue     192.884336
+dtype: float64
+Dirty skew	 id                 -0.056869
+article_jvolumn    19.826569
+article_jissue     13.621789
+dtype: float64
+
+Clean distincts	 {'id': 1000, 'article_title': 1000, 'article_language': 34, 'journal_title': 718, 'jounral_abbreviation': 423, 'journal_issn': 616, 'article_jvolumn': 189, 'article_jissue': 41, 'article_jcreated_at': 262, 'article_pagination': 871, 'author_list': 937}
+Dirty distincts	 {'id': 1000, 'article_title': 1000, 'article_language': 34, 'journal_title': 718, 'jounral_abbreviation': 423, 'journal_issn': 616, 'article_jvolumn': 189, 'article_jissue': 41, 'article_jcreated_at': 263, 'article_pagination': 872, 'author_list': 937}
+Dirty mv	 {'id': 0, 'article_title': 0, 'article_language': 0, 'journal_title': 0, 'jounral_abbreviation': 0, 'journal_issn': 0, 'article_jvolumn': 22, 'article_jissue': 53, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty outliers	 {'article_title': 0, 'article_language': 0, 'journal_title': 0, 'jounral_abbreviation': 0, 'journal_issn': 0, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0, 'id': 0, 'article_jvolumn': 0, 'article_jissue': 0}
+Dirty typos	 {'id': 0, 'article_title': 14, 'article_language': 0, 'journal_title': 9, 'jounral_abbreviation': 0, 'journal_issn': 12, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 498, 'article_pagination': 32, 'author_list': 84}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'article_title': 0, 'article_language': 0, 'journal_title': 0, 'jounral_abbreviation': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 224, 'article_pagination': 0, 'author_list': 0}

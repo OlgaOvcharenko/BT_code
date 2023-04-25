@@ -1,0 +1,137 @@
+Rows	 2410
+Cols	 11
+Clean min	 index         1.0
+id            1.0
+ounces        8.4
+abv           0.0
+ibu           0.0
+brewery_id    0.0
+dtype: float64
+Clean max	 index         2410.000
+id            2692.000
+ounces          32.000
+abv              0.128
+ibu            138.000
+brewery_id     557.000
+dtype: float64
+Clean mean	 index         1205.500000
+id            1431.113278
+ounces          13.592241
+abv              0.058236
+ibu             24.901245
+brewery_id     231.749793
+dtype: float64
+Clean q25	 index         603.25
+id            808.25
+ounces         12.00
+abv             0.05
+ibu             0.00
+brewery_id     93.00
+Name: 0.25, dtype: float64
+Clean q50	 index         1205.500
+id            1453.500
+ounces          12.000
+abv              0.056
+ibu             18.000
+brewery_id     205.000
+Name: 0.5, dtype: float64
+Clean q75	 index         1807.750
+id            2075.750
+ounces          16.000
+abv              0.067
+ibu             41.000
+brewery_id     366.000
+Name: 0.75, dtype: float64
+Clean var	 index         484209.166667
+id            566196.013315
+ounces             5.532862
+abv                0.000268
+ibu              836.314859
+brewery_id     24864.749741
+dtype: float64
+Clean kurt	 index        -1.200000
+id           -1.087042
+ounces        9.040031
+abv           3.243063
+ibu           0.288450
+brewery_id   -1.087549
+dtype: float64
+Clean skew	 index         0.000000
+id           -0.121246
+ounces        2.046687
+abv          -0.441565
+ibu           1.071636
+brewery_id    0.307974
+dtype: float64
+
+Dirty min	 index         1.0
+id            1.0
+ounces        0.0
+abv           0.0
+ibu           0.0
+brewery_id    0.0
+dtype: float64
+Dirty max	 index         2410.00
+id            2692.00
+ounces           0.00
+abv              0.12
+ibu            138.00
+brewery_id     557.00
+dtype: float64
+Dirty mean	 index         1205.500000
+id            1431.113278
+ounces           0.000000
+abv              0.041182
+ibu             24.901245
+brewery_id     231.749793
+dtype: float64
+Dirty q25	 index         1205.50
+id            1453.50
+ounces           0.00
+abv              0.05
+ibu             18.00
+brewery_id     205.00
+Name: 0.5, dtype: float64
+Dirty q50	 index         1205.50
+id            1453.50
+ounces           0.00
+abv              0.05
+ibu             18.00
+brewery_id     205.00
+Name: 0.5, dtype: float64
+Dirty q75	 index         1807.750
+id            2075.750
+ounces           0.000
+abv              0.062
+ibu             41.000
+brewery_id     366.000
+Name: 0.75, dtype: float64
+Dirty var	 index         484209.166667
+id            566196.013315
+ounces             0.000000
+abv                0.000898
+ibu              836.314859
+brewery_id     24864.749741
+dtype: float64
+Dirty kurt	 index        -1.200000
+id           -1.087042
+ounces        0.000000
+abv          -1.207510
+ibu           0.288450
+brewery_id   -1.087549
+dtype: float64
+Dirty skew	 index         0.000000
+id           -0.121246
+ounces        0.000000
+abv          -0.327865
+ibu           1.071636
+brewery_id    0.307974
+dtype: float64
+
+Clean distincts	 {'index': 2410, 'id': 2410, 'beer_name': 2304, 'style': 100, 'ounces': 7, 'abv': 75, 'ibu': 108, 'brewery_id': 558, 'brewery_name': 551, 'city': 384, 'state': 51}
+Dirty distincts	 {'index': 2410, 'id': 2410, 'beer_name': 2304, 'style': 100, 'ounces': 1, 'abv': 69, 'ibu': 108, 'brewery_id': 558, 'brewery_name': 551, 'city': 475, 'state': 52}
+Dirty mv	 {'index': 0, 'id': 0, 'beer_name': 0, 'style': 0, 'ounces': 2410, 'abv': 755, 'ibu': 1005, 'brewery_id': 0, 'brewery_name': 0, 'city': 0, 'state': 0}
+Dirty outliers	 {'beer_name': 0, 'style': 0, 'brewery_name': 0, 'city': 0, 'state': 0, 'index': 0, 'id': 0, 'ounces': 0, 'abv': 0, 'ibu': 0, 'brewery_id': 0}
+Dirty typos	 {'index': 0, 'id': 0, 'beer_name': 0, 'style': 0, 'ounces': 0, 'abv': 0, 'ibu': 0, 'brewery_id': 0, 'brewery_name': 0, 'city': 127, 'state': 127}
+Dirty swaps	 0
+Dirty replacements	 {'index': 0, 'id': 0, 'beer_name': 0, 'style': 0, 'ounces': 0, 'abv': 0, 'ibu': 0, 'brewery_id': 0, 'brewery_name': 0, 'city': 0, 'state': 0}

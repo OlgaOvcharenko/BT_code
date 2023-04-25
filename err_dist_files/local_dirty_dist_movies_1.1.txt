@@ -1,0 +1,29 @@
+Rows	 8129
+Cols	 17
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'year': 0.0, 'rating_value': 0.0, 'rating_count': 0.0}
+Dirty max	 {'year': 2019.0, 'rating_value': 9.7, 'rating_count': 1193651.0}
+Dirty mean	 {'year': 1941.3209496863083, 'rating_value': 5.822770328453685, 'rating_count': 9902.323533029892}
+Dirty q25	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q50	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q75	 {'year': 1999.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty var	 {'year': 99978.3422296098, 'rating_value': 4.480287304650988, 'rating_count': 2275401658.904172}
+Dirty kurt	 {'year': 33.564765797364096, 'rating_value': 2.3183310735542584, 'rating_count': 165.0566451202207}
+Dirty skew	 {'year': -5.94635233160316, 'rating_value': -1.7006609883461206, 'rating_count': 10.386452360557506}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 7420, 'name': 7206, 'year': 108, 'release_date': 4924, 'director': 3756, 'creator': 6201, 'actors': 7214, 'full_cast': 7308, 'language': 502, 'country': 400, 'duration': 217, 'rating_value': 84, 'rating_count': 1624, 'review_count': 5293, 'genre': 719, 'filming_locations': 3191, 'description': 7298}
+Dirty mv	 {'id': 0, 'name': 0, 'year': 209, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 461, 'rating_count': 6311, 'genre': 0, 'description': 0}
+Dirty outliers	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 0, 'rating_count': 0, 'genre': 0, 'description': 0}
+Dirty typos	 {'id': 209, 'name': 19, 'year': 0, 'release_date': 209, 'director': 46, 'creator': 122, 'duration': 118, 'rating_value': 0, 'rating_count': 0, 'genre': 151, 'description': 207}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 1, 'creator': 18, 'duration': 80, 'rating_value': 0, 'rating_count': 0, 'genre': 43, 'description': 0}

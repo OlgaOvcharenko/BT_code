@@ -1,0 +1,329 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [0, 28, 24, 31, 0, 0, 33, 26, 30, 39, 34, 32, 27, 27, 32, 29, 36, 23, 31, 27]
+Original error count [ 0 28 24 31  0  0 33 26 30 39 34 32 27 27 32 29 36 23 31 27]
+2022-08-07 15:20:17,465 INFO spark.SparkContext: Running Spark version 3.2.0
+2022-08-07 15:20:17,564 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-08-07 15:20:17,708 INFO resource.ResourceUtils: ==============================================================
+2022-08-07 15:20:17,709 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-08-07 15:20:17,709 INFO resource.ResourceUtils: ==============================================================
+2022-08-07 15:20:17,709 INFO spark.SparkContext: Submitted application: DataGenerator_dirty_hospital_2048.0
+2022-08-07 15:20:17,738 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 102400, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-08-07 15:20:17,761 INFO resource.ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+2022-08-07 15:20:17,763 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-08-07 15:20:17,830 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-07 15:20:17,830 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-07 15:20:17,831 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-07 15:20:17,831 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-07 15:20:17,831 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-07 15:20:18,184 INFO util.Utils: Successfully started service 'sparkDriver' on port 37657.
+2022-08-07 15:20:18,221 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-08-07 15:20:18,263 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-08-07 15:20:18,286 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-08-07 15:20:18,286 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-08-07 15:20:18,332 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-08-07 15:20:18,362 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-e5b2aafd-6b4c-479c-9088-786477b6d5c7
+2022-08-07 15:20:18,403 INFO memory.MemoryStore: MemoryStore started with capacity 53.8 GiB
+2022-08-07 15:20:18,488 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-08-07 15:20:18,623 INFO util.log: Logging initialized @5264ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-08-07 15:20:18,719 INFO server.Server: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+2022-08-07 15:20:18,744 INFO server.Server: Started @5387ms
+2022-08-07 15:20:18,793 INFO server.AbstractConnector: Started ServerConnector@34eed5de{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-08-07 15:20:18,793 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-08-07 15:20:18,824 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@322a1552{/jobs,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,828 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@131020c4{/jobs/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,829 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@74105dfa{/jobs/job,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,833 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1e53cb{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,834 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@dbe66a6{/stages,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,835 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@21888201{/stages/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,837 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@74876123{/stages/stage,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,839 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4fcdefb2{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,841 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@f7bb9f6{/stages/pool,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,842 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@76a2b61c{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,843 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@e0768d3{/storage,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,844 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@28195568{/storage/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,845 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4fab24fd{/storage/rdd,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,846 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@265a485b{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,847 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@364da10c{/environment,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,848 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5185434b{/environment/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,850 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@15faf710{/executors,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,851 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5e5c925{/executors/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,852 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2abc370a{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,854 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@755b8a1d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,866 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@365b604c{/static,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,868 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@30c12163{/,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,869 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3193db47{/api,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,871 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3313c43b{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,872 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4067ea4d{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-08-07 15:20:18,875 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://tango.dm.isds.tugraz.at:4040
+2022-08-07 15:20:19,232 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at charlie.dm.isds.tugraz.at/129.27.206.4:8032
+2022-08-07 15:20:19,492 INFO yarn.Client: Requesting a new application from cluster with 9 NodeManagers
+2022-08-07 15:20:20,042 INFO conf.Configuration: resource-types.xml not found
+2022-08-07 15:20:20,042 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-08-07 15:20:20,057 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (122880 MB per container)
+2022-08-07 15:20:20,058 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+2022-08-07 15:20:20,058 INFO yarn.Client: Setting up container launch context for our AM
+2022-08-07 15:20:20,060 INFO yarn.Client: Setting up the launch environment for our AM container
+2022-08-07 15:20:20,066 INFO yarn.Client: Preparing resources for our AM container
+2022-08-07 15:20:20,679 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2022-08-07 15:20:23,035 INFO yarn.Client: Uploading resource file:/tmp/spark-39af7698-3826-4572-ad31-f727e3db11b4/__spark_libs__3725136540166649954.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0300/__spark_libs__3725136540166649954.zip
+2022-08-07 15:20:26,082 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0300/pyspark.zip
+2022-08-07 15:20:27,191 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0300/py4j-0.10.9.2-src.zip
+2022-08-07 15:20:28,481 INFO yarn.Client: Uploading resource file:/tmp/spark-39af7698-3826-4572-ad31-f727e3db11b4/__spark_conf__898960811002143482.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0300/__spark_conf__.zip
+2022-08-07 15:20:29,672 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-07 15:20:29,672 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-07 15:20:29,672 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-07 15:20:29,672 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-07 15:20:29,672 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-07 15:20:29,694 INFO yarn.Client: Submitting application application_1659444800769_0300 to ResourceManager
+2022-08-07 15:20:29,806 INFO impl.YarnClientImpl: Submitted application application_1659444800769_0300
+2022-08-07 15:20:30,811 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:30,814 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659878429748
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0300/
+	 user: oovcharenko
+2022-08-07 15:20:31,817 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:32,820 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:33,824 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:34,827 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:35,830 INFO yarn.Client: Application report for application_1659444800769_0300 (state: ACCEPTED)
+2022-08-07 15:20:36,164 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> charlie.dm.isds.tugraz.at, PROXY_URI_BASES -> http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0300), /proxy/application_1659444800769_0300
+2022-08-07 15:20:36,833 INFO yarn.Client: Application report for application_1659444800769_0300 (state: RUNNING)
+2022-08-07 15:20:36,833 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 129.27.206.24
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659878429748
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0300/
+	 user: oovcharenko
+2022-08-07 15:20:36,835 INFO cluster.YarnClientSchedulerBackend: Application application_1659444800769_0300 has started running.
+2022-08-07 15:20:36,846 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33793.
+2022-08-07 15:20:36,846 INFO netty.NettyBlockTransferService: Server created on tango.dm.isds.tugraz.at:33793
+2022-08-07 15:20:36,848 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-08-07 15:20:36,856 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 33793, None)
+2022-08-07 15:20:36,862 INFO storage.BlockManagerMasterEndpoint: Registering block manager tango.dm.isds.tugraz.at:33793 with 53.8 GiB RAM, BlockManagerId(driver, tango.dm.isds.tugraz.at, 33793, None)
+2022-08-07 15:20:36,866 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 33793, None)
+2022-08-07 15:20:36,868 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, tango.dm.isds.tugraz.at, 33793, None)
+2022-08-07 15:20:37,049 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2022-08-07 15:20:37,081 INFO ui.ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:37,084 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@11f2c08d{/metrics/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:43,247 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.20:42694) with ID 1,  ResourceProfileId 0
+2022-08-07 15:20:43,250 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.17:39742) with ID 3,  ResourceProfileId 0
+2022-08-07 15:20:43,254 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.14:59536) with ID 2,  ResourceProfileId 0
+2022-08-07 15:20:43,335 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+2022-08-07 15:20:43,419 INFO storage.BlockManagerMasterEndpoint: Registering block manager mike.dm.isds.tugraz.at:39189 with 59.8 GiB RAM, BlockManagerId(2, mike.dm.isds.tugraz.at, 39189, None)
+2022-08-07 15:20:43,421 INFO storage.BlockManagerMasterEndpoint: Registering block manager sierra.dm.isds.tugraz.at:34117 with 59.8 GiB RAM, BlockManagerId(1, sierra.dm.isds.tugraz.at, 34117, None)
+2022-08-07 15:20:43,423 INFO storage.BlockManagerMasterEndpoint: Registering block manager papa.dm.isds.tugraz.at:35883 with 59.8 GiB RAM, BlockManagerId(3, papa.dm.isds.tugraz.at, 35883, None)
+2022-08-07 15:20:43,548 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2022-08-07 15:20:43,551 INFO internal.SharedState: Warehouse path is 'file:/home/oovcharenko/benchmark/BS_OlgaOvcharenko/spark-warehouse'.
+2022-08-07 15:20:43,567 INFO ui.ServerInfo: Adding filter to /SQL: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:43,569 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@614cfb8b{/SQL,null,AVAILABLE,@Spark}
+2022-08-07 15:20:43,569 INFO ui.ServerInfo: Adding filter to /SQL/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:43,570 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5e2d3cc7{/SQL/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:43,571 INFO ui.ServerInfo: Adding filter to /SQL/execution: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:43,572 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5be8b259{/SQL/execution,null,AVAILABLE,@Spark}
+2022-08-07 15:20:43,572 INFO ui.ServerInfo: Adding filter to /SQL/execution/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:43,573 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@654417fe{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-08-07 15:20:43,574 INFO ui.ServerInfo: Adding filter to /static/sql: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 15:20:43,576 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@539bc4b9{/static/sql,null,AVAILABLE,@Spark}
+Created integer part 11.260618448257446
+Created data 11.466483116149902
+Num of rows 2048000
+
+PROVIDER_NUMBER
+Set values
+Random sample 0.05993795394897461
+Create errors lists sample 0.9450218677520752
+
+NAME
+Set values
+Random sample 0.021950483322143555
+Create errors lists sample 1.603731632232666
+
+ADDRESS_1
+Set values
+Random sample 0.027433156967163086
+Create errors lists sample 1.8341403007507324
+
+CITY
+Set values
+Random sample 0.02927875518798828
+Create errors lists sample 1.6357386112213135
+
+STATE
+Set values
+Random sample 0.04446148872375488
+Create errors lists sample 1.4662837982177734
+
+ZIP
+Set values
+Random sample 0.046027421951293945
+Create errors lists sample 1.5667636394500732
+
+COUNTY
+Set values
+Random sample 0.04609560966491699
+Create errors lists sample 1.875657558441162
+
+PHONE
+Set values
+Random sample 0.05215334892272949
+Create errors lists sample 1.7599821090698242
+
+TYPE
+Set values
+Random sample 0.04902529716491699
+Create errors lists sample 1.6569039821624756
+
+OWNER
+Set values
+Random sample 0.042771339416503906
+Create errors lists sample 1.6132707595825195
+
+EMERGENCY_SERVICE
+Set values
+Random sample 0.04127192497253418
+Create errors lists sample 1.5546619892120361
+
+CONDITION
+Set values
+Random sample 0.04895329475402832
+Create errors lists sample 1.918562650680542
+
+MEASURE_CODE
+Set values
+Random sample 0.04689216613769531
+Create errors lists sample 1.5701062679290771
+
+MEASURE_NAME
+Set values
+Random sample 0.031261444091796875
+Create errors lists sample 1.3152673244476318
+
+SCORE
+Set values
+Random sample 0.03566288948059082
+Create errors lists sample 1.8730204105377197
+
+SAMPLE
+Set values
+Random sample 0.02710437774658203
+Create errors lists sample 1.4159045219421387
+
+STATE_AVERAGE
+Set values
+Random sample 0.024533987045288086
+Create errors lists sample 1.4742705821990967
+Create error DATAFRAME  0.2978525161743164
+Create spark obj 0.3034055233001709
+Set values after join, TOTAL 0.39043402671813965
+Create error DATAFRAME  2.301114559173584
+Create spark obj 2.3054559230804443
+Set values after join, TOTAL 2.358933210372925
+Create error DATAFRAME  0.2597997188568115
+Create spark obj 0.26432108879089355
+Set values after join, TOTAL 0.31143999099731445
+Create error DATAFRAME  0.22666406631469727
+Create spark obj 0.23041439056396484
+Set values after join, TOTAL 0.2764875888824463
+Create error DATAFRAME  0.21177124977111816
+Create spark obj 0.21677494049072266
+Set values after join, TOTAL 0.26386594772338867
+Create error DATAFRAME  0.21428894996643066
+Create spark obj 0.21829891204833984
+Set values after join, TOTAL 0.26599717140197754
+Create error DATAFRAME  0.210052490234375
+Create spark obj 0.21492552757263184
+Set values after join, TOTAL 0.27117061614990234
+Create error DATAFRAME  0.20814776420593262
+Create spark obj 0.21216845512390137
+Set values after join, TOTAL 0.2694547176361084
+Create error DATAFRAME  0.19161605834960938
+Create spark obj 0.19563746452331543
+Set values after join, TOTAL 0.25274085998535156
+Create error DATAFRAME  0.18770313262939453
+Create spark obj 0.19197726249694824
+Set values after join, TOTAL 0.24806451797485352
+Create error DATAFRAME  0.18289995193481445
+Create spark obj 0.1870112419128418
+Set values after join, TOTAL 0.24404692649841309
+Create error DATAFRAME  0.20318007469177246
+Create spark obj 0.2071223258972168
+Set values after join, TOTAL 0.26461124420166016
+Create error DATAFRAME  0.3685641288757324
+Create spark obj 0.3734309673309326
+Set values after join, TOTAL 0.4314877986907959
+Create error DATAFRAME  0.1913752555847168
+Create spark obj 0.1960158348083496
+Set values after join, TOTAL 0.2535388469696045
+Create error DATAFRAME  0.1744539737701416
+Create spark obj 0.17840909957885742
+Set values after join, TOTAL 0.2369699478149414
+Create error DATAFRAME  0.16918563842773438
+Create spark obj 0.1750507354736328
+Set values after join, TOTAL 0.23522663116455078
+Create error DATAFRAME  0.16676807403564453
+Create spark obj 0.17061567306518555
+Set values after join, TOTAL 0.23008012771606445
+Swaps numerical done
+Swaps str
+Generated dataset
+Save dataset: 575.2860131263733
+
+Traceback (most recent call last):
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/test_scale_up_distributed.py", line 23, in <module>
+    generated_data = scale_modify.run_distributed(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/scale_modify.py", line 196, in run_distributed
+    new_error_dist.get_error_dist_after_scaling_sp(data_gen.clean_data_scaled, dirty_data.dtypes)
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/error_distribution.py", line 178, in get_error_dist_after_scaling_sp
+    self.dirty_var[c] = list(data_df
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip/pyspark/sql/dataframe.py", line 693, in collect
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip/py4j/java_gateway.py", line 1309, in __call__
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
+    
+  File "/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o1109.collectToPython.
+: org.apache.spark.SparkException: Job 42 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1115)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1113)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1113)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2615)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2515)
+	at org.apache.spark.SparkContext.$anonfun$stop$12(SparkContext.scala:2086)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1442)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2086)
+	at org.apache.spark.SparkContext.$anonfun$new$38(SparkContext.scala:667)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2019)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+
+real	11m0.582s
+user	2m5.975s
+sys	0m22.889s

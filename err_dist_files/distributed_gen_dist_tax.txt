@@ -1,0 +1,29 @@
+Rows	 800000
+Cols	 15
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'area_code': 201.0, 'married_exemp': 0.0, 'zip': 0.0, 'single_exemp': 0.0, 'child_exemp': 0.0, 'salary': 0.0, 'rate': 0.0}
+Dirty max	 {'area_code': 989.0, 'married_exemp': 24500.0, 'zip': 99950.0, 'single_exemp': 12750.0, 'child_exemp': 3300.0, 'salary': 100000.0, 'rate': inf}
+Dirty mean	 {'zip': 49095.17194, 'salary': 52505.9937725, 'area_code': 560.831715, 'married_exemp': 1652.15198, 'single_exemp': 829.79607625, 'child_exemp': 602.21722375, 'rate': inf}
+Dirty q25	 {}
+Dirty q50	 {}
+Dirty q75	 {}
+Dirty var	 {'area_code': 58144.88543626557, 'married_exemp': 11582000.388162557, 'zip': 935203155.2387929, 'single_exemp': 2980093.683080956, 'child_exemp': 1113530.0749826862, 'salary': 833594066.2048416, 'rate': nan}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'gender': 2, 'area_code': 273, 'phone': 197555, 'married_exemp': 28, 'state': 53, 'zip': 39063, 'marital_status': 2, 'has_child': 2, 'single_exemp': 30, 'child_exemp': 28, 'salary': 23, 'rate': 284, 'f_name': 10015, 'l_name': 10042, 'city': 17861}
+Dirty mv	 {'f_name': 0, 'l_name': 0, 'city': 0, 'state': 0, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 4, 'rate': 748, 'single_exemp': 800, 'child_exemp': 800}
+Dirty outliers	 {'f_name': 0, 'l_name': 0, 'gender': 0, 'area_code': 0, 'phone': 0, 'city': 0, 'state': 0, 'zip': 4, 'marital_status': 0, 'has_child': 0, 'salary': 4, 'rate': 0, 'single_exemp': 0, 'married_exemp': 0, 'child_exemp': 0}
+Dirty typos	 {'f_name': 1088, 'l_name': 2780, 'city': 800, 'state': 800, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0, 'area_code': 0, 'married_exemp': 0}
+Dirty swaps	 16
+Dirty replacements	 {'state': 1600, 'zip': 1600, 'marital_status': 800, 'has_child': 800, 'f_name': 0, 'l_name': 0, 'city': 0, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'child_exemp': 0}

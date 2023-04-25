@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/./test_scale_up_local.py", line 4, in <module>
+    import scale_modify
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/scale_modify.py", line 6, in <module>
+    import pandas as pd
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/__init__.py", line 48, in <module>
+    from pandas.core.api import (
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/arrays/__init__.py", line 20, in <module>
+    from pandas.core.arrays.string_arrow import ArrowStringArray
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/arrays/string_arrow.py", line 68, in <module>
+    import pyarrow.compute as pc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/compute.py", line 318, in <module>
+    _make_global_functions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/compute.py", line 315, in _make_global_functions
+    g[cpp_name] = g[name] = _wrap_function(name, func)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/compute.py", line 290, in _wrap_function
+    return _decorate_compute_function(wrapper, name, func, options_class)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/compute.py", line 156, in _decorate_compute_function
+    options_class_doc = _scrape_options_class_doc(options_class)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/compute.py", line 103, in _scrape_options_class_doc
+    doc = docscrape.NumpyDocString(options_class.__doc__)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyarrow/vendored/docscrape.py", line 148, in __init__
+    docstring = textwrap.dedent(docstring).split('\n')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/textwrap.py", line 430, in dedent
+    text = _whitespace_only_re.sub('', text)
+KeyboardInterrupt
+
+real	0m0.319s
+user	0m1.073s
+sys	0m0.238s

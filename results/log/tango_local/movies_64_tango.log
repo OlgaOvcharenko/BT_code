@@ -1,0 +1,363 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [190, 17, 190, 190, 43, 129, 0, 0, 0, 0, 187, 419, 5737, 0, 180, 0, 188]
+Original error count [ 190   17  190  190   43  129    0    0    0    0  187  419 5737    0
+  180    0  188]
+Error distribution computation: 0.8927972316741943
+
+Scale dataset: 2.4693870544433594
+
+Generated dataset
+Errors to scaled dataset: 29.497138261795044
+
+Save dataset: 7.722955703735352
+
+Error count [[ 12160.   1088.  12160.  12160.   2752.   8256.      0.      0.      0.
+       0.  11968.  26816. 367168.      0.  11520.      0.  12032.]]
+Computed new error distribution: 1.0479462146759033
+
+--------------------------------------------------------
+year
+Mean original dirty: 	 1941.3556156968878
+Mean generated dirty: 	 1941.413844722598
+
+Var original dirty: 	 99985.80558153316
+Var generated dirty: 	 99974.58424376059
+
+Q25 original dirty: 	 1981.0
+Q25 generated dirty: 	 1981.0
+
+Q50 original dirty: 	 1999.0
+Q50 generated dirty: 	 2000.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 2010.0
+Q75 generated dirty: 	 2000.0
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 -5.9462158906719536
+Skew generated dirty: 	 -5.945390584659159
+
+Kurtosis original dirty: 	 33.56495974672927
+Kurtosis generated dirty: 	 33.54465628484953
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 2019.0
+Max generated dirty: 	 2019.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+rating_value
+Mean original dirty: 	 6.01617050067659
+Mean generated dirty: 	 5.82936971414073
+
+Var original dirty: 	 3.471481611201671
+Var generated dirty: 	 4.453898676442958
+
+Q25 original dirty: 	 5.5
+Q25 generated dirty: 	 5.4
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 6.4
+Q50 generated dirty: 	 6.4
+
+Q75 original dirty: 	 7.2
+Q75 generated dirty: 	 6.4
+
+INFO: Q75 differs from original dirty data
+
+Skew original dirty: 	 -1.875321087091931
+Skew generated dirty: 	 -1.7080007211652226
+
+Kurtosis original dirty: 	 3.696881445260384
+Kurtosis generated dirty: 	 2.3521344889958073
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 9.7
+Max generated dirty: 	 9.7
+
+--------------------------------------------------------
+--------------------------------------------------------
+rating_count
+Mean original dirty: 	 78.54086603518267
+Mean generated dirty: 	 11078.544728941137
+
+Var original dirty: 	 40231.05605067768
+Var generated dirty: 	 3025163308.7562337
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 0.0
+
+Q50 original dirty: 	 0.0
+Q50 generated dirty: 	 0.0
+
+Q75 original dirty: 	 0.0
+Q75 generated dirty: 	 0.0
+
+In rating_count faulty IQR
+Skew original dirty: 	 2.8510544311319777
+Skew generated dirty: 	 10.19538081105799
+
+Kurtosis original dirty: 	 7.3986740391392765
+Kurtosis generated dirty: 	 154.13231650185796
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 0.0
+
+Max original dirty: 	 999.0
+Max generated dirty: 	 1532446.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+id
+Distinct original dirty: 	 7390
+Distinct original clean: 	 7390
+Distinct estimated dirty (whole dataset): 	 472960, distinct with ratio 	 472960
+Distinct estimated dirty (replicate + errors): 	 19550.0
+Distinct generated dirty: 	 19447
+
+Typos original dirty: 	 190
+Typos generated dirty: 	 12160
+
+Distinct estimated typo: 	 12160
+Unique typos count - original dirty: 	 190
+Unique typos count - generated dirty: 	 12144
+
+--------------------------------------------------------
+name
+Distinct original dirty: 	 7199
+Distinct original clean: 	 7198
+Distinct estimated dirty (whole dataset): 	 439055, distinct with ratio 	 439055
+Distinct estimated dirty (replicate + errors): 	 8286.0
+Distinct generated dirty: 	 8283
+
+Typos original dirty: 	 17
+Typos generated dirty: 	 1088
+
+Distinct estimated typo: 	 1088
+Unique typos count - original dirty: 	 17
+Unique typos count - generated dirty: 	 1088
+
+--------------------------------------------------------
+year
+Distinct original dirty: 	 108
+Distinct original clean: 	 107
+Distinct estimated dirty (whole dataset): 	 119, distinct with ratio 	 119
+Distinct estimated dirty (replicate + errors): 	 108.0
+Distinct generated dirty: 	 108
+
+MV original dirty: 	 190
+MV generated dirty: 	 12160
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+release_date
+Distinct original dirty: 	 4900
+Distinct original clean: 	 4796
+Distinct estimated dirty (whole dataset): 	 157643, distinct with ratio 	 157643
+Distinct estimated dirty (replicate + errors): 	 15845.0
+Distinct generated dirty: 	 15794
+
+Typos original dirty: 	 190
+Typos generated dirty: 	 12160
+
+Distinct estimated typo: 	 11049
+Unique typos count - original dirty: 	 184
+Unique typos count - generated dirty: 	 11047
+
+--------------------------------------------------------
+director
+Distinct original dirty: 	 3746
+Distinct original clean: 	 3723
+Distinct estimated dirty (whole dataset): 	 89446, distinct with ratio 	 89446
+Distinct estimated dirty (replicate + errors): 	 6411.0
+Distinct generated dirty: 	 6399
+
+Replacements original dirty: 	 1
+Replacements generated dirty: 	 64
+
+Unique replacements count - original dirty: 	 1
+Unique replacements count - generated dirty: 	 1 
+
+Typos original dirty: 	 42
+Typos generated dirty: 	 2688
+
+Distinct estimated typo: 	 2688
+Unique typos count - original dirty: 	 42
+Unique typos count - generated dirty: 	 2688
+
+--------------------------------------------------------
+creator
+Distinct original dirty: 	 6174
+Distinct original clean: 	 6171
+Distinct estimated dirty (whole dataset): 	 312116, distinct with ratio 	 312116
+Distinct estimated dirty (replicate + errors): 	 13275.0
+Distinct generated dirty: 	 13258
+
+Replacements original dirty: 	 18
+Replacements generated dirty: 	 1152
+
+Unique replacements count - original dirty: 	 18
+Unique replacements count - generated dirty: 	 18 
+
+Typos original dirty: 	 111
+Typos generated dirty: 	 7104
+
+Distinct estimated typo: 	 7104
+Unique typos count - original dirty: 	 111
+Unique typos count - generated dirty: 	 7104
+
+--------------------------------------------------------
+actors
+Distinct original dirty: 	 7214
+Distinct original clean: 	 7214
+Distinct estimated dirty (whole dataset): 	 450285, distinct with ratio 	 450285
+Distinct estimated dirty (replicate + errors): 	 7214.0
+Distinct generated dirty: 	 7214
+
+--------------------------------------------------------
+full_cast
+Distinct original dirty: 	 7308
+Distinct original clean: 	 7308
+Distinct estimated dirty (whole dataset): 	 465540, distinct with ratio 	 465540
+Distinct estimated dirty (replicate + errors): 	 7308.0
+Distinct generated dirty: 	 7308
+
+--------------------------------------------------------
+language
+Distinct original dirty: 	 502
+Distinct original clean: 	 502
+Distinct estimated dirty (whole dataset): 	 12813, distinct with ratio 	 12813
+Distinct estimated dirty (replicate + errors): 	 502.0
+Distinct generated dirty: 	 502
+
+--------------------------------------------------------
+country
+Distinct original dirty: 	 400
+Distinct original clean: 	 400
+Distinct estimated dirty (whole dataset): 	 8832, distinct with ratio 	 8832
+Distinct estimated dirty (replicate + errors): 	 400.0
+Distinct generated dirty: 	 400
+
+--------------------------------------------------------
+duration
+Distinct original dirty: 	 214
+Distinct original clean: 	 163
+Distinct estimated dirty (whole dataset): 	 522, distinct with ratio 	 522
+Distinct estimated dirty (replicate + errors): 	 1025.0
+Distinct generated dirty: 	 975
+
+Replacements original dirty: 	 80
+Replacements generated dirty: 	 5120
+
+Unique replacements count - original dirty: 	 44
+Unique replacements count - generated dirty: 	 44 
+
+Typos original dirty: 	 107
+Typos generated dirty: 	 6848
+
+Distinct estimated typo: 	 862
+Unique typos count - original dirty: 	 52
+Unique typos count - generated dirty: 	 827
+
+--------------------------------------------------------
+rating_value
+Distinct original dirty: 	 83
+Distinct original clean: 	 83
+Distinct estimated dirty (whole dataset): 	 100, distinct with ratio 	 100
+Distinct estimated dirty (replicate + errors): 	 84.0
+Distinct generated dirty: 	 84
+
+MV original dirty: 	 419
+MV generated dirty: 	 26816
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+rating_count
+Distinct original dirty: 	 742
+Distinct original clean: 	 5903
+Distinct estimated dirty (whole dataset): 	 9854, distinct with ratio 	 9854
+Distinct estimated dirty (replicate + errors): 	 5904.0
+Distinct generated dirty: 	 5904
+
+MV original dirty: 	 5737
+MV generated dirty: 	 367168
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+review_count
+Distinct original dirty: 	 5293
+Distinct original clean: 	 5293
+Distinct estimated dirty (whole dataset): 	 226280, distinct with ratio 	 226280
+Distinct estimated dirty (replicate + errors): 	 5293.0
+Distinct generated dirty: 	 5293
+
+--------------------------------------------------------
+genre
+Distinct original dirty: 	 717
+Distinct original clean: 	 637
+Distinct estimated dirty (whole dataset): 	 4334, distinct with ratio 	 4334
+Distinct estimated dirty (replicate + errors): 	 3193.0
+Distinct generated dirty: 	 3183
+
+Replacements original dirty: 	 43
+Replacements generated dirty: 	 2752
+
+Unique replacements count - original dirty: 	 26
+Unique replacements count - generated dirty: 	 26 
+
+Typos original dirty: 	 137
+Typos generated dirty: 	 8768
+
+Distinct estimated typo: 	 2556
+Unique typos count - original dirty: 	 84
+Unique typos count - generated dirty: 	 2556
+
+--------------------------------------------------------
+filming_locations
+Distinct original dirty: 	 3191
+Distinct original clean: 	 3191
+Distinct estimated dirty (whole dataset): 	 102559, distinct with ratio 	 102559
+Distinct estimated dirty (replicate + errors): 	 3191.0
+Distinct generated dirty: 	 3191
+
+--------------------------------------------------------
+description
+Distinct original dirty: 	 7263
+Distinct original clean: 	 7261
+Distinct estimated dirty (whole dataset): 	 462493, distinct with ratio 	 462493
+Distinct estimated dirty (replicate + errors): 	 19293.0
+Distinct generated dirty: 	 19270
+
+Typos original dirty: 	 188
+Typos generated dirty: 	 12032
+
+Distinct estimated typo: 	 12032
+Unique typos count - original dirty: 	 188
+Unique typos count - generated dirty: 	 12032
+
+Validation of scaled dataset: 0.0007224082946777344
+
+Time elapsed 41.638919830322266
+
+(472960, 17)
++++++++++++++++++++++++++++++++
+
+real	0m43.082s
+user	1m19.891s
+sys	0m8.185s

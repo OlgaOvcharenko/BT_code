@@ -1,0 +1,12 @@
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_8192.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_8192.txt': No such file or directory
+Deleted generated_datasets/generated_distributed_movies_8192.parquet
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_rayyan_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_rayyan_8192.txt
+Deleted generated_datasets/generated_distributed_rayyan_8192.parquet
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_flights_8192.txt
+Deleted err_dist_files/distributed_dirty_dist_flights_8192.txt
+Deleted generated_datasets/generated_distributed_flights_8192.parquet

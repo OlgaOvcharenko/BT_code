@@ -1,0 +1,6 @@
+Error occurred during initialization of VM
+Initial heap size set to a larger value than the maximum heap size
+
+real	0m0.313s
+user	0m0.446s
+sys	0m0.045s

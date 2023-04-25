@@ -1,0 +1,29 @@
+Rows	 256000
+Cols	 20
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'index': 1.0, 'provider_number': 0.0, 'zip': 0.0, 'phone': 0.0}
+Dirty max	 {'index': 1000.0, 'provider_number': 20018.0, 'zip': 99559.0, 'phone': 9075436300.0}
+Dirty mean	 {'index': 500.5, 'provider_number': 9947.1436015625, 'zip': 36065.587171875, 'phone': 2784796976.675484}
+Dirty q25	 {'index': 500.5, 'provider_number': 10029.0, 'zip': 35968.0, 'phone': 2567372000.0}
+Dirty q50	 {'index': 500.5, 'provider_number': 10029.0, 'zip': 35968.0, 'phone': 2567372000.0}
+Dirty q75	 {'index': 500.5, 'provider_number': 10029.0, 'zip': 35968.0, 'phone': 2567372000.0}
+Dirty var	 {'index': 83333.57552177938, 'provider_number': 4752230.140926017, 'zip': 117293176.33717582, 'phone': 1.2811829940107062e+18}
+Dirty kurt	 {'index': -1.200002400012654, 'provider_number': 18.0015140973732, 'zip': 23.516721290816267, 'phone': 16.795759017711816}
+Dirty skew	 {'index': 0.0, 'provider_number': -0.7414667689127772, 'zip': 2.7884610067611035, 'phone': 2.8066848169927527}
+
+Clean distincts	 {}
+Dirty distincts	 {'index': 1000, 'provider_number': 46, 'name': 6139, 'address_1': 7928, 'address_2': 1, 'address_3': 1, 'city': 7647, 'state': 4, 'zip': 45, 'county': 4823, 'phone': 46, 'type': 581, 'owner': 2331, 'emergency_service': 6, 'condition': 2841, 'measure_code': 4024, 'measure_name': 9217, 'score': 826, 'sample': 7276, 'state_average': 5940}
+Dirty mv	 {'provider_number': 7168, 'name': 0, 'address_1': 0, 'city': 0, 'state': 0, 'zip': 7680, 'county': 0, 'phone': 8704, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0}
+Dirty outliers	 {'provider_number': 0, 'name': 0, 'address_1': 0, 'city': 0, 'state': 0, 'zip': 0, 'county': 0, 'phone': 0, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0}
+Dirty typos	 {'provider_number': 0, 'name': 6144, 'address_1': 7936, 'city': 8448, 'state': 6656, 'zip': 0, 'county': 9984, 'phone': 0, 'type': 8192, 'owner': 6912, 'emergency_service': 6912, 'condition': 8192, 'measure_code': 7424, 'measure_name': 9216, 'score': 5888, 'sample': 7936, 'state_average': 6912, 'index': 0}
+Dirty swaps	 0
+Dirty replacements	 {'provider_number': 0, 'name': 0, 'address_1': 0, 'city': 0, 'state': 0, 'zip': 0, 'county': 0, 'phone': 0, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0}

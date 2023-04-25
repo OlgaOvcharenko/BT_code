@@ -1,0 +1,33 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+Error distribution computation: 6.230993986129761
+
+Scale dataset: 0.24932098388671875
+
+Generated dataset
+Errors to scaled dataset: 11.33731198310852
+
+Traceback (most recent call last):
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/./test_scale_up_local.py", line 23, in <module>
+    generated_data = scale_modify.run_default(
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/scale_modify.py", line 111, in run_default
+    data_gen.clean_data_scaled.to_csv(index=False, path_or_buf=output_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/generic.py", line 3551, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/io/formats/format.py", line 1180, in to_csv
+    csv_formatter.save()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 261, in save
+    self._save()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 266, in _save
+    self._save_body()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 304, in _save_body
+    self._save_chunk(start_i, end_i)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/io/formats/csvs.py", line 315, in _save_chunk
+    libwriters.write_csv_rows(
+  File "pandas/_libs/writers.pyx", line 72, in pandas._libs.writers.write_csv_rows
+KeyboardInterrupt
+
+real	0m21.244s
+user	1m4.246s
+sys	0m9.381s

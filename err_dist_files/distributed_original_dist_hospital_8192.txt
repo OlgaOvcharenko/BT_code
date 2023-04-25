@@ -1,0 +1,101 @@
+Rows	 1000
+Cols	 20
+Clean min	 index                       1
+provider_number         10001
+zip                     35007
+phone              2052743000
+dtype: int64
+Clean max	 index                    1000
+provider_number         20018
+zip                     99559
+phone              9075436300
+dtype: int64
+Clean mean	 index              5.005000e+02
+provider_number    1.023344e+04
+zip                3.718230e+04
+phone              2.882319e+09
+dtype: float64
+Clean q25	 index              2.507500e+02
+provider_number    1.001575e+04
+zip                3.559400e+04
+phone              2.562359e+09
+Name: 0.25, dtype: float64
+Clean q50	 index              5.005000e+02
+provider_number    1.003050e+04
+zip                3.596800e+04
+phone              2.567688e+09
+Name: 0.5, dtype: float64
+Clean q75	 index              7.502500e+02
+provider_number    1.004400e+04
+zip                3.630275e+04
+phone              3.343614e+09
+Name: 0.75, dtype: float64
+Clean var	 index              8.341667e+04
+provider_number    1.956218e+06
+zip                7.961161e+07
+phone              1.041143e+18
+dtype: float64
+Clean kurt	 index              -1.200000
+provider_number    45.213150
+zip                44.957507
+phone              24.398723
+dtype: float64
+Clean skew	 index              0.000000
+provider_number    6.863105
+zip                6.834574
+phone              4.385638
+dtype: float64
+
+Dirty min	 index              1.0
+provider_number    0.0
+zip                0.0
+phone              0.0
+dtype: float64
+Dirty max	 index              1.000000e+03
+provider_number    2.001800e+04
+zip                9.955900e+04
+phone              9.075436e+09
+dtype: float64
+Dirty mean	 index              5.005000e+02
+provider_number    9.952466e+03
+zip                3.610819e+04
+phone              2.784249e+09
+dtype: float64
+Dirty q25	 index              5.005000e+02
+provider_number    1.002900e+04
+zip                3.596800e+04
+phone              2.567372e+09
+Name: 0.5, dtype: float64
+Dirty q50	 index              5.005000e+02
+provider_number    1.002900e+04
+zip                3.596800e+04
+phone              2.567372e+09
+Name: 0.5, dtype: float64
+Dirty q75	 index              7.502500e+02
+provider_number    1.004400e+04
+zip                3.630200e+04
+phone              3.343471e+09
+Name: 0.75, dtype: float64
+Dirty var	 index              8.341667e+04
+provider_number    4.811264e+06
+zip                1.199108e+08
+phone              1.305225e+18
+dtype: float64
+Dirty kurt	 index              -1.200000
+provider_number    17.869850
+zip                23.201165
+phone              16.748390
+dtype: float64
+Dirty skew	 index              0.000000
+provider_number   -0.685399
+zip                2.815214
+phone              2.836775
+dtype: float64
+
+Clean distincts	 {'index': 1000, 'provider_number': 45, 'name': 45, 'address_1': 45, 'address_2': 1, 'address_3': 1, 'city': 39, 'state': 2, 'zip': 44, 'county': 33, 'phone': 45, 'type': 1, 'owner': 8, 'emergency_service': 2, 'condition': 5, 'measure_code': 28, 'measure_name': 28, 'score': 57, 'sample': 309, 'state_average': 48}
+Dirty distincts	 {'index': 1000, 'provider_number': 46, 'name': 69, 'address_1': 76, 'address_2': 1, 'address_3': 1, 'city': 72, 'state': 4, 'zip': 45, 'county': 65, 'phone': 46, 'type': 13, 'owner': 27, 'emergency_service': 6, 'condition': 28, 'measure_code': 54, 'measure_name': 64, 'score': 69, 'sample': 334, 'state_average': 74}
+Dirty mv	 {'index': 0, 'provider_number': 28, 'name': 0, 'address_1': 0, 'address_2': 0, 'address_3': 0, 'city': 0, 'state': 0, 'zip': 30, 'county': 0, 'phone': 34, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0}
+Dirty outliers	 {'name': 0, 'address_1': 0, 'address_2': 0, 'address_3': 0, 'city': 0, 'state': 0, 'county': 0, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0, 'index': 0, 'provider_number': 0, 'zip': 0, 'phone': 0}
+Dirty typos	 {'index': 0, 'provider_number': 0, 'name': 24, 'address_1': 31, 'address_2': 0, 'address_3': 0, 'city': 33, 'state': 26, 'zip': 0, 'county': 39, 'phone': 0, 'type': 32, 'owner': 27, 'emergency_service': 27, 'condition': 32, 'measure_code': 29, 'measure_name': 36, 'score': 23, 'sample': 31, 'state_average': 27}
+Dirty swaps	 0
+Dirty replacements	 {'index': 0, 'provider_number': 0, 'name': 0, 'address_1': 0, 'address_2': 0, 'address_3': 0, 'city': 0, 'state': 0, 'zip': 0, 'county': 0, 'phone': 0, 'type': 0, 'owner': 0, 'emergency_service': 0, 'condition': 0, 'measure_code': 0, 'measure_name': 0, 'score': 0, 'sample': 0, 'state_average': 0}

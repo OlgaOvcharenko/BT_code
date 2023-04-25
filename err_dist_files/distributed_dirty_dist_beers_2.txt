@@ -1,0 +1,29 @@
+Rows	 4820
+Cols	 11
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'index': 1.0, 'id': 1.0, 'brewery_id': 0.0, 'ounces': 0.0, 'abv': 0.0, 'ibu': 0.0}
+Dirty max	 {'index': 2410.0, 'id': 2692.0, 'brewery_id': 557.0, 'ounces': inf, 'abv': 99999.0, 'ibu': 138.0}
+Dirty mean	 {'index': 1205.5, 'id': 1431.1132780082987, 'brewery_id': 231.74979253112033, 'ounces': inf, 'abv': 10435.620171991726, 'ibu': 14.530082987551868}
+Dirty q25	 {'index': 727.0, 'id': 936.0, 'brewery_id': 127.0, 'ounces': 0.0, 'abv': 0.04699999839067459, 'ibu': 0.0}
+Dirty q50	 {'index': 727.0, 'id': 936.0, 'brewery_id': 127.0, 'ounces': 0.0, 'abv': 0.04699999839067459, 'ibu': 0.0}
+Dirty q75	 {'index': 1.0, 'id': 1.0, 'brewery_id': 0.0, 'ounces': 0.0, 'abv': 0.0, 'ibu': 0.0}
+Dirty var	 {'index': 484108.6874870306, 'id': 566078.520886119, 'brewery_id': 24859.59000825742, 'ounces': nan, 'abv': 934839375.1716, 'ibu': 647.3427345853509}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'index': 2093, 'id': 2206, 'beer_name': 2317, 'style': 133, 'brewery_id': 538, 'brewery_name': 541, 'ounces': 2, 'abv': 59, 'ibu': 93, 'city': 448, 'state': 54}
+Dirty mv	 {'ounces': 4820, 'abv': 1510, 'ibu': 2010, 'city': 0, 'state': 0}
+Dirty outliers	 {'index': 0, 'id': 0, 'beer_name': 0, 'style': 0, 'ounces': 0, 'abv': 0, 'ibu': 0, 'brewery_id': 0, 'brewery_name': 0, 'city': 0, 'state': 0}
+Dirty typos	 {'ounces': 0, 'abv': 0, 'ibu': 0, 'city': 254, 'state': 254, 'index': 0, 'id': 0, 'brewery_id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'ounces': 0, 'abv': 0, 'ibu': 0, 'city': 0, 'state': 0}

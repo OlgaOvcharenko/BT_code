@@ -1,0 +1,29 @@
+Rows	 472960
+Cols	 17
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'year': 0.0, 'rating_value': 0.0, 'rating_count': 0.0}
+Dirty max	 {'year': 2019.0, 'rating_value': 9.7, 'rating_count': 1532446.0}
+Dirty mean	 {'year': 1941.413844722598, 'rating_value': 5.82936971414073, 'rating_count': 11078.544728941137}
+Dirty q25	 {'year': 2000.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q50	 {'year': 2000.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty q75	 {'year': 2000.0, 'rating_value': 6.4, 'rating_count': 0.0}
+Dirty var	 {'year': 99974.58424376059, 'rating_value': 4.453898676442958, 'rating_count': 3025163308.7562337}
+Dirty kurt	 {'year': 33.54465628484953, 'rating_value': 2.3521344889958073, 'rating_count': 154.13231650185796}
+Dirty skew	 {'year': -5.945390584659159, 'rating_value': -1.7080007211652226, 'rating_count': 10.19538081105799}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 19447, 'name': 8283, 'year': 108, 'release_date': 15794, 'director': 6399, 'creator': 13258, 'actors': 7214, 'full_cast': 7308, 'language': 502, 'country': 400, 'duration': 975, 'rating_value': 84, 'rating_count': 5904, 'review_count': 5293, 'genre': 3183, 'filming_locations': 3191, 'description': 19270}
+Dirty mv	 {'id': 0, 'name': 0, 'year': 12160, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 26816, 'rating_count': 367168, 'genre': 0, 'description': 0}
+Dirty outliers	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 0, 'creator': 0, 'duration': 0, 'rating_value': 0, 'rating_count': 0, 'genre': 0, 'description': 0}
+Dirty typos	 {'id': 12160, 'name': 1088, 'year': 0, 'release_date': 12160, 'director': 2688, 'creator': 7104, 'duration': 6848, 'rating_value': 0, 'rating_count': 0, 'genre': 8768, 'description': 12032}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 64, 'creator': 1152, 'duration': 5120, 'rating_value': 0, 'rating_count': 0, 'genre': 2752, 'description': 0}

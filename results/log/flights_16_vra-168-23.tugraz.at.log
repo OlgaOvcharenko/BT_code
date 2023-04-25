@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/./test_scale_up_local.py", line 4, in <module>
+    import scale_modify
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/scale_modify.py", line 6, in <module>
+    import pandas as pd
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/__init__.py", line 145, in <module>
+    from . import core
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/__init__.py", line 102, in <module>
+    from . import _internal
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/_internal.py", line 10, in <module>
+    import platform
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/platform.py", line 119, in <module>
+    import subprocess
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/subprocess.py", line 51, in <module>
+    import threading
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 1386, in <module>
+    _main_thread = _MainThread()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 1277, in __init__
+    self._started.set()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 544, in set
+    self._cond.notify_all()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 381, in notify_all
+    self.notify(len(self._waiters))
+KeyboardInterrupt
+
+real	0m0.084s
+user	0m0.315s
+sys	0m0.069s

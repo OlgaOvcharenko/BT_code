@@ -1,0 +1,29 @@
+Rows	 256000
+Cols	 11
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'id': 1266.0, 'article_jvolumn': -1.0, 'article_jissue': -1.0}
+Dirty max	 {'id': 982590.0, 'article_jvolumn': inf, 'article_jissue': 9453.0}
+Dirty mean	 {'id': 502027.7812098412, 'article_jvolumn': inf, 'article_jissue': 46.50905575550043}
+Dirty q25	 {'id': 258486.0, 'article_jvolumn': 13.0, 'article_jissue': 0.0}
+Dirty q50	 {'id': 258486.0, 'article_jvolumn': 13.0, 'article_jissue': 0.0}
+Dirty q75	 {'id': 1266.0, 'article_jvolumn': -1.0, 'article_jissue': -1.0}
+Dirty var	 {'id': 84310579306.42326, 'article_jvolumn': nan, 'article_jissue': 279185.115462311}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 1323, 'article_language': 34, 'jounral_abbreviation': 451, 'article_title': 5829, 'journal_title': 3010, 'journal_issn': 1524, 'article_jvolumn': 197, 'article_jissue': 37, 'article_pagination': 9515, 'author_list': 11845, 'article_jcreated_at': 4618}
+Dirty mv	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 5632, 'article_jissue': 13568, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty outliers	 {'id': 0, 'article_title': 0, 'article_language': 0, 'journal_title': 0, 'jounral_abbreviation': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty typos	 {'article_title': 3584, 'journal_title': 2304, 'journal_issn': 3072, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 127488, 'article_pagination': 8192, 'author_list': 21504, 'id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 29014, 'article_pagination': 0, 'author_list': 0}

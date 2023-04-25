@@ -1,0 +1,416 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+2022-08-07 03:06:35,375 INFO spark.SparkContext: Running Spark version 3.2.0
+2022-08-07 03:06:35,483 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-08-07 03:06:35,652 INFO resource.ResourceUtils: ==============================================================
+2022-08-07 03:06:35,652 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-08-07 03:06:35,653 INFO resource.ResourceUtils: ==============================================================
+2022-08-07 03:06:35,653 INFO spark.SparkContext: Submitted application: DataGenerator_dirty_tax_2048.0
+2022-08-07 03:06:35,685 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 102400, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-08-07 03:06:35,709 INFO resource.ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+2022-08-07 03:06:35,712 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-08-07 03:06:35,791 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-07 03:06:35,791 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-07 03:06:35,792 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-07 03:06:35,792 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-07 03:06:35,792 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-07 03:06:36,178 INFO util.Utils: Successfully started service 'sparkDriver' on port 38755.
+2022-08-07 03:06:36,221 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-08-07 03:06:36,266 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-08-07 03:06:36,291 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-08-07 03:06:36,292 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-08-07 03:06:36,339 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-08-07 03:06:36,373 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-6c0c96eb-1ad6-40eb-8071-b83d3c1db9f5
+2022-08-07 03:06:36,411 INFO memory.MemoryStore: MemoryStore started with capacity 53.8 GiB
+2022-08-07 03:06:36,499 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-08-07 03:06:36,676 INFO util.log: Logging initialized @13027ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-08-07 03:06:36,771 INFO server.Server: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+2022-08-07 03:06:36,800 INFO server.Server: Started @13153ms
+2022-08-07 03:06:36,854 INFO server.AbstractConnector: Started ServerConnector@3d70322{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-08-07 03:06:36,855 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-08-07 03:06:36,889 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3260ca9a{/jobs,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,893 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@678d185d{/jobs/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,894 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@55b951c{/jobs/job,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,899 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1ba09358{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,900 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c239834{/stages,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,901 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@b449e08{/stages/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,902 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4f3cdec9{/stages/stage,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,905 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@9e75761{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,906 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a0147cb{/stages/pool,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,907 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1e6b8dbe{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,909 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@14203130{/storage,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,910 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5f309d72{/storage/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,911 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@16541794{/storage/rdd,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,912 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@773217a5{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,913 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@23c1c4b{/environment,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,914 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5f7e8f7c{/environment/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,915 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b29b92f{/executors,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,917 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@39df8bfb{/executors/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,918 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3fcc792f{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,920 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@67f8064c{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,933 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4f65d4{/static,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,934 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2760a557{/,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,936 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1c8d0893{/api,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,937 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4c58c722{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,938 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@10b146e8{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-08-07 03:06:36,940 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://tango.dm.isds.tugraz.at:4040
+2022-08-07 03:06:37,368 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at charlie.dm.isds.tugraz.at/129.27.206.4:8032
+2022-08-07 03:06:37,688 INFO yarn.Client: Requesting a new application from cluster with 9 NodeManagers
+2022-08-07 03:06:38,338 INFO conf.Configuration: resource-types.xml not found
+2022-08-07 03:06:38,338 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-08-07 03:06:38,355 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (122880 MB per container)
+2022-08-07 03:06:38,356 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+2022-08-07 03:06:38,356 INFO yarn.Client: Setting up container launch context for our AM
+2022-08-07 03:06:38,359 INFO yarn.Client: Setting up the launch environment for our AM container
+2022-08-07 03:06:38,366 INFO yarn.Client: Preparing resources for our AM container
+2022-08-07 03:06:38,971 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2022-08-07 03:06:41,614 INFO yarn.Client: Uploading resource file:/tmp/spark-b82aa9cf-c348-4a29-8bff-10e88c372ea4/__spark_libs__13568624818071777786.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0293/__spark_libs__13568624818071777786.zip
+2022-08-07 03:06:44,394 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0293/pyspark.zip
+2022-08-07 03:06:45,866 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0293/py4j-0.10.9.2-src.zip
+2022-08-07 03:06:47,325 INFO yarn.Client: Uploading resource file:/tmp/spark-b82aa9cf-c348-4a29-8bff-10e88c372ea4/__spark_conf__5847964511177363429.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0293/__spark_conf__.zip
+2022-08-07 03:06:48,505 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-07 03:06:48,505 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-07 03:06:48,505 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-07 03:06:48,505 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-07 03:06:48,505 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-07 03:06:48,528 INFO yarn.Client: Submitting application application_1659444800769_0293 to ResourceManager
+2022-08-07 03:06:48,623 INFO impl.YarnClientImpl: Submitted application application_1659444800769_0293
+2022-08-07 03:06:49,627 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:49,630 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659834408580
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0293/
+	 user: oovcharenko
+2022-08-07 03:06:50,631 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:51,633 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:52,634 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:53,636 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:54,637 INFO yarn.Client: Application report for application_1659444800769_0293 (state: ACCEPTED)
+2022-08-07 03:06:55,578 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> charlie.dm.isds.tugraz.at, PROXY_URI_BASES -> http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0293), /proxy/application_1659444800769_0293
+2022-08-07 03:06:55,638 INFO yarn.Client: Application report for application_1659444800769_0293 (state: RUNNING)
+2022-08-07 03:06:55,639 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 129.27.206.16
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659834408580
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0293/
+	 user: oovcharenko
+2022-08-07 03:06:55,640 INFO cluster.YarnClientSchedulerBackend: Application application_1659444800769_0293 has started running.
+2022-08-07 03:06:55,652 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38371.
+2022-08-07 03:06:55,652 INFO netty.NettyBlockTransferService: Server created on tango.dm.isds.tugraz.at:38371
+2022-08-07 03:06:55,654 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-08-07 03:06:55,662 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 38371, None)
+2022-08-07 03:06:55,668 INFO storage.BlockManagerMasterEndpoint: Registering block manager tango.dm.isds.tugraz.at:38371 with 53.8 GiB RAM, BlockManagerId(driver, tango.dm.isds.tugraz.at, 38371, None)
+2022-08-07 03:06:55,672 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 38371, None)
+2022-08-07 03:06:55,674 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, tango.dm.isds.tugraz.at, 38371, None)
+2022-08-07 03:06:55,875 INFO ui.ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:06:55,878 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6f5ecffa{/metrics/json,null,AVAILABLE,@Spark}
+2022-08-07 03:06:56,387 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2022-08-07 03:07:00,120 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.16:59250) with ID 2,  ResourceProfileId 0
+2022-08-07 03:07:00,305 INFO storage.BlockManagerMasterEndpoint: Registering block manager oscar.dm.isds.tugraz.at:39027 with 59.8 GiB RAM, BlockManagerId(2, oscar.dm.isds.tugraz.at, 39027, None)
+2022-08-07 03:07:02,949 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.13:60792) with ID 1,  ResourceProfileId 0
+2022-08-07 03:07:03,130 INFO storage.BlockManagerMasterEndpoint: Registering block manager lima.dm.isds.tugraz.at:33359 with 59.8 GiB RAM, BlockManagerId(1, lima.dm.isds.tugraz.at, 33359, None)
+2022-08-07 03:07:03,298 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.5:55590) with ID 3,  ResourceProfileId 0
+2022-08-07 03:07:03,330 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+2022-08-07 03:07:03,481 INFO storage.BlockManagerMasterEndpoint: Registering block manager delta.dm.isds.tugraz.at:34453 with 59.8 GiB RAM, BlockManagerId(3, delta.dm.isds.tugraz.at, 34453, None)
+2022-08-07 03:07:03,542 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2022-08-07 03:07:03,545 INFO internal.SharedState: Warehouse path is 'file:/home/oovcharenko/benchmark/BS_OlgaOvcharenko/spark-warehouse'.
+2022-08-07 03:07:03,561 INFO ui.ServerInfo: Adding filter to /SQL: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:07:03,563 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4cd02c2{/SQL,null,AVAILABLE,@Spark}
+2022-08-07 03:07:03,564 INFO ui.ServerInfo: Adding filter to /SQL/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:07:03,565 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@47400dfb{/SQL/json,null,AVAILABLE,@Spark}
+2022-08-07 03:07:03,565 INFO ui.ServerInfo: Adding filter to /SQL/execution: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:07:03,567 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@641a1aa8{/SQL/execution,null,AVAILABLE,@Spark}
+2022-08-07 03:07:03,567 INFO ui.ServerInfo: Adding filter to /SQL/execution/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:07:03,568 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@dddaafa{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-08-07 03:07:03,569 INFO ui.ServerInfo: Adding filter to /static/sql: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-07 03:07:03,570 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@cb2c571{/static/sql,null,AVAILABLE,@Spark}
+Created integer part 12.690467596054077
+Created data 12.889786720275879
+Num of rows 409600000
+Replacements state
+REPLACEMENT start
+REPLACEMENT Num repl 	819200
+
+
+2022-08-07 03:42:20,613 ERROR util.Utils: Aborting task
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:301)
+	at org.apache.spark.api.python.PythonRDD$.$anonfun$toLocalIteratorAndServe$2(PythonRDD.scala:242)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1496)
+	at org.apache.spark.api.python.PythonRDD$.$anonfun$toLocalIteratorAndServe$1(PythonRDD.scala:260)
+	at org.apache.spark.api.python.PythonRDD$.$anonfun$toLocalIteratorAndServe$1$adapted(PythonRDD.scala:211)
+	at org.apache.spark.security.SocketFuncServer.handleConnection(SocketAuthServer.scala:113)
+	at org.apache.spark.security.SocketFuncServer.handleConnection(SocketAuthServer.scala:107)
+	at org.apache.spark.security.SocketAuthServer$$anon$1.$anonfun$run$4(SocketAuthServer.scala:68)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.security.SocketAuthServer$$anon$1.run(SocketAuthServer.scala:68)
+Caused by: org.apache.spark.SparkException: Job 31 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1(DAGScheduler.scala:1115)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$cleanUpAfterSchedulerStop$1$adapted(DAGScheduler.scala:1113)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:79)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:1113)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2615)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2515)
+	at org.apache.spark.SparkContext.$anonfun$stop$12(SparkContext.scala:2086)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1442)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2086)
+	at org.apache.spark.SparkContext.$anonfun$new$38(SparkContext.scala:667)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:214)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2019)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:188)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,642 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,643 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,642 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,646 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,646 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-07 03:42:20,646 ERROR server.TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:178)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:150)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:691)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:274)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:111)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:140)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:53)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)

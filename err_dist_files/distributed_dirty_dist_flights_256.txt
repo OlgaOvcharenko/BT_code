@@ -1,0 +1,29 @@
+Rows	 608256
+Cols	 7
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'tuple_id': 1.0}
+Dirty max	 {'tuple_id': 2376.0}
+Dirty mean	 {'tuple_id': 1183.902623562936}
+Dirty q25	 {'tuple_id': 615.0}
+Dirty q50	 {'tuple_id': 615.0}
+Dirty q75	 {'tuple_id': 1.0}
+Dirty var	 {'tuple_id': 474065.61438474286}
+Dirty kurt	 {}
+Dirty skew	 {}
+
+Clean distincts	 {}
+Dirty distincts	 {'tuple_id': 2093, 'src': 29, 'flight': 97, 'sched_dep_time': 2661, 'act_dep_time': 5133, 'sched_arr_time': 4850, 'act_arr_time': 3472}
+Dirty mv	 {'sched_dep_time': 0, 'act_dep_time': 0, 'sched_arr_time': 0, 'act_arr_time': 0}
+Dirty outliers	 {'tuple_id': 0, 'src': 0, 'flight': 0, 'sched_dep_time': 0, 'act_dep_time': 0, 'sched_arr_time': 0, 'act_arr_time': 0}
+Dirty typos	 {'sched_dep_time': 228608, 'act_dep_time': 345600, 'sched_arr_time': 276480, 'act_arr_time': 328448, 'tuple_id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'sched_dep_time': 4277, 'act_dep_time': 49155, 'sched_arr_time': 5120, 'act_arr_time': 17408}

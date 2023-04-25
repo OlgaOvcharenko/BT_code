@@ -1,0 +1,155 @@
+Rows	 200000
+Cols	 15
+Clean min	 area_code         201.0
+zip               501.0
+salary           5000.0
+rate                0.0
+single_exemp        0.0
+married_exemp       0.0
+child_exemp         0.0
+dtype: float64
+Clean max	 area_code           989.0
+zip               99950.0
+salary           100000.0
+rate                  9.3
+single_exemp      12750.0
+married_exemp     24500.0
+child_exemp        3300.0
+dtype: float64
+Clean mean	 area_code          560.831715
+zip              49189.386255
+salary           52506.900000
+rate                 4.250111
+single_exemp       830.671960
+married_exemp     1652.151980
+child_exemp        602.790100
+dtype: float64
+Clean q25	 area_code          317.0
+zip              21813.0
+salary           25000.0
+rate                 2.2
+single_exemp         0.0
+married_exemp        0.0
+child_exemp          0.0
+Name: 0.25, dtype: float64
+Clean q50	 area_code          571.00
+zip              49947.00
+salary           50000.00
+rate                 4.75
+single_exemp         0.00
+married_exemp        0.00
+child_exemp          0.00
+Name: 0.5, dtype: float64
+Clean q75	 area_code          787.00
+zip              74840.00
+salary           80000.00
+rate                 6.25
+single_exemp      1040.00
+married_exemp     2080.00
+child_exemp       1000.00
+Name: 0.75, dtype: float64
+Clean var	 area_code        5.814510e+04
+zip              9.325352e+08
+salary           8.335624e+08
+rate             7.810384e+00
+single_exemp     2.982989e+06
+married_exemp    1.158204e+07
+child_exemp      1.114238e+06
+dtype: float64
+Clean kurt	 area_code        -1.314559
+zip              -1.232089
+salary           -1.209826
+rate             -1.009698
+single_exemp     20.333649
+married_exemp    18.416817
+child_exemp       1.086997
+dtype: float64
+Clean skew	 area_code        0.057453
+zip             -0.002013
+salary          -0.002528
+rate            -0.213947
+single_exemp     3.767302
+married_exemp    3.591308
+child_exemp      1.592060
+dtype: float64
+
+Dirty min	 area_code        201.0
+zip              501.0
+salary             0.0
+rate               0.0
+single_exemp       0.0
+married_exemp      0.0
+child_exemp        0.0
+dtype: float64
+Dirty max	 area_code              989.0
+zip              200000000.0
+salary           100000000.0
+rate                 45000.0
+single_exemp         12750.0
+married_exemp        24500.0
+child_exemp           3300.0
+dtype: float64
+Dirty mean	 area_code          560.831715
+zip              50095.125655
+salary           53005.850015
+rate                 4.475096
+single_exemp       830.671960
+married_exemp     1652.151980
+child_exemp        602.790100
+dtype: float64
+Dirty q25	 area_code          571.00
+zip              49839.00
+salary           50000.00
+rate                 4.75
+single_exemp         0.00
+married_exemp        0.00
+child_exemp          0.00
+Name: 0.5, dtype: float64
+Dirty q50	 area_code          571.00
+zip              49839.00
+salary           50000.00
+rate                 4.75
+single_exemp         0.00
+married_exemp        0.00
+child_exemp          0.00
+Name: 0.5, dtype: float64
+Dirty q75	 area_code          787.00
+zip              74818.00
+salary           80000.00
+rate                 6.25
+single_exemp      1040.00
+married_exemp     2080.00
+child_exemp       1000.00
+Name: 0.75, dtype: float64
+Dirty var	 area_code        5.814510e+04
+zip              2.008370e+11
+salary           5.078109e+10
+rate             1.013090e+04
+single_exemp     2.982989e+06
+married_exemp    1.158204e+07
+child_exemp      1.114238e+06
+dtype: float64
+Dirty kurt	 area_code            -1.314559
+zip              198141.698396
+salary           193487.727064
+rate             199691.735829
+single_exemp         20.333649
+married_exemp        18.416817
+child_exemp           1.086997
+dtype: float64
+Dirty skew	 area_code          0.057453
+zip              444.093511
+salary           436.247165
+rate             446.696519
+single_exemp       3.767302
+married_exemp      3.591308
+child_exemp        1.592060
+dtype: float64
+
+Clean distincts	 {'f_name': 10000, 'l_name': 10000, 'gender': 2, 'area_code': 273, 'phone': 197555, 'city': 17829, 'state': 52, 'zip': 39069, 'marital_status': 2, 'has_child': 2, 'salary': 20, 'rate': 278, 'single_exemp': 28, 'married_exemp': 28, 'child_exemp': 26}
+Dirty distincts	 {'f_name': 10002, 'l_name': 10004, 'gender': 2, 'area_code': 273, 'phone': 197555, 'city': 17859, 'state': 53, 'zip': 39062, 'marital_status': 2, 'has_child': 2, 'salary': 23, 'rate': 280, 'single_exemp': 29, 'married_exemp': 28, 'child_exemp': 27}
+Dirty mv	 {'f_name': 0, 'l_name': 0, 'gender': 0, 'area_code': 0, 'phone': 0, 'city': 0, 'state': 0, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 1, 'rate': 187, 'single_exemp': 200, 'married_exemp': 0, 'child_exemp': 200}
+Dirty outliers	 {'f_name': 0, 'l_name': 0, 'gender': 0, 'phone': 0, 'city': 0, 'state': 0, 'marital_status': 0, 'has_child': 0, 'area_code': 0, 'zip': 1, 'salary': 1, 'rate': 0, 'single_exemp': 0, 'married_exemp': 0, 'child_exemp': 0}
+Dirty typos	 {'f_name': 272, 'l_name': 695, 'gender': 0, 'area_code': 0, 'phone': 0, 'city': 200, 'state': 200, 'zip': 0, 'marital_status': 0, 'has_child': 0, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'married_exemp': 0, 'child_exemp': 0}
+Dirty swaps	 4
+Dirty replacements	 {'f_name': 0, 'l_name': 0, 'gender': 0, 'area_code': 0, 'phone': 0, 'city': 0, 'state': 400, 'zip': 400, 'marital_status': 200, 'has_child': 200, 'salary': 0, 'rate': 0, 'single_exemp': 0, 'married_exemp': 0, 'child_exemp': 0}

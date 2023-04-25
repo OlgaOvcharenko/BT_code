@@ -1,0 +1,9 @@
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [274, 698, 0, 0, 0, 201, 600, 401, 200, 200, 3, 188, 200, 0, 200]
+Original error count [274 698   0   0   0 201 600 401 200 200   3 188 200   0 200]
+Error distribution computation: 6.129318475723267
+
+Scale dataset: 431.62339520454407
+
+INFO: Added less new unique MV (13) then expected unique MV (512).
+INFO: Added less new unique MV (5) then expected unique MV (6).

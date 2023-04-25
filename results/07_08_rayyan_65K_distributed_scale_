@@ -1,0 +1,5 @@
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_65536.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_65536.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_65536.parquet': No such file or directory
+Deleted tmp

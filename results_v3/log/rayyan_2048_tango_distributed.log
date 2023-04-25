@@ -1,0 +1,475 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.0.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+WARNING:root:'PYARROW_IGNORE_TIMEZONE' environment variable was not set. It is required to set this environment variable to '1' in both driver and executor sides if you use pyarrow>=2.0.0. pandas-on-Spark will set it for you but it does not work if there is a Spark context already launched.
+Error dist count [0, 14, 0, 9, 0, 12, 22, 53, 722, 32, 84]
+Original error count [  0  14   0   9   0  12  22  53 722  32  84]
+2022-08-04 07:02:03,460 INFO spark.SparkContext: Running Spark version 3.2.0
+2022-08-04 07:02:03,555 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-08-04 07:02:03,697 INFO resource.ResourceUtils: ==============================================================
+2022-08-04 07:02:03,697 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-08-04 07:02:03,698 INFO resource.ResourceUtils: ==============================================================
+2022-08-04 07:02:03,698 INFO spark.SparkContext: Submitted application: DataGenerator_dirty_rayyan_2048.0
+2022-08-04 07:02:03,727 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 102400, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-08-04 07:02:03,751 INFO resource.ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+2022-08-04 07:02:03,765 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-08-04 07:02:03,841 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-04 07:02:03,841 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-04 07:02:03,842 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-04 07:02:03,842 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-04 07:02:03,842 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-04 07:02:04,183 INFO util.Utils: Successfully started service 'sparkDriver' on port 43471.
+2022-08-04 07:02:04,219 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-08-04 07:02:04,258 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-08-04 07:02:04,280 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-08-04 07:02:04,281 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-08-04 07:02:04,328 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-08-04 07:02:04,356 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-04f65ae9-26f1-4af8-a743-c6e82a74f933
+2022-08-04 07:02:04,394 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2022-08-04 07:02:04,442 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-08-04 07:02:04,580 INFO util.log: Logging initialized @5055ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-08-04 07:02:04,659 INFO server.Server: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+2022-08-04 07:02:04,682 INFO server.Server: Started @5157ms
+2022-08-04 07:02:04,728 INFO server.AbstractConnector: Started ServerConnector@170fcd0b{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2022-08-04 07:02:04,729 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-08-04 07:02:04,757 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@19563d5{/jobs,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,760 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@706b6c7{/jobs/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,761 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b9aecae{/jobs/job,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,765 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@93b9a43{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,766 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c7753a9{/stages,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,767 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7c05ffd0{/stages/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,768 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7cb34f5d{/stages/stage,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,771 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@c8755b8{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,772 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@11bf6d75{/stages/pool,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,773 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@fc2070c{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,774 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@29a05eff{/storage,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,775 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7a2f136c{/storage/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,776 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6045749c{/storage/rdd,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,777 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@531d18f2{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,778 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1fec3d2f{/environment,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,779 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b07fee9{/environment/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,780 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3349db50{/executors,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,781 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@21add60{/executors/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,782 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@260b5a3a{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,785 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@10fdc224{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,796 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1b83c2d3{/static,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,797 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@227cae{/,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,799 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1c974f66{/api,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,800 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@750d3d33{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,801 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@620347b8{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-08-04 07:02:04,803 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://tango.dm.isds.tugraz.at:4040
+2022-08-04 07:02:05,169 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at charlie.dm.isds.tugraz.at/129.27.206.4:8032
+2022-08-04 07:02:05,398 INFO yarn.Client: Requesting a new application from cluster with 9 NodeManagers
+2022-08-04 07:02:05,926 INFO conf.Configuration: resource-types.xml not found
+2022-08-04 07:02:05,926 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-08-04 07:02:05,939 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (122880 MB per container)
+2022-08-04 07:02:05,940 INFO yarn.Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+2022-08-04 07:02:05,941 INFO yarn.Client: Setting up container launch context for our AM
+2022-08-04 07:02:05,943 INFO yarn.Client: Setting up the launch environment for our AM container
+2022-08-04 07:02:05,949 INFO yarn.Client: Preparing resources for our AM container
+2022-08-04 07:02:06,623 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2022-08-04 07:02:09,010 INFO yarn.Client: Uploading resource file:/tmp/spark-4b67cd06-8c76-40db-8beb-8dbde1152320/__spark_libs__15456198822839016177.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0207/__spark_libs__15456198822839016177.zip
+2022-08-04 07:02:11,764 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/pyspark.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0207/pyspark.zip
+2022-08-04 07:02:12,969 INFO yarn.Client: Uploading resource file:/home/oovcharenko/spark-3.2.0-bin-hadoop3.2/python/lib/py4j-0.10.9.2-src.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0207/py4j-0.10.9.2-src.zip
+2022-08-04 07:02:14,281 INFO yarn.Client: Uploading resource file:/tmp/spark-4b67cd06-8c76-40db-8beb-8dbde1152320/__spark_conf__13705592211933600247.zip -> hdfs://charlie.dm.isds.tugraz.at:9000/user/oovcharenko/.sparkStaging/application_1659444800769_0207/__spark_conf__.zip
+2022-08-04 07:02:15,464 INFO spark.SecurityManager: Changing view acls to: oovcharenko
+2022-08-04 07:02:15,464 INFO spark.SecurityManager: Changing modify acls to: oovcharenko
+2022-08-04 07:02:15,464 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-08-04 07:02:15,465 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-08-04 07:02:15,465 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(oovcharenko); groups with view permissions: Set(); users  with modify permissions: Set(oovcharenko); groups with modify permissions: Set()
+2022-08-04 07:02:15,486 INFO yarn.Client: Submitting application application_1659444800769_0207 to ResourceManager
+2022-08-04 07:02:15,542 INFO impl.YarnClientImpl: Submitted application application_1659444800769_0207
+2022-08-04 07:02:16,545 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:16,549 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659589335515
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0207/
+	 user: oovcharenko
+2022-08-04 07:02:17,550 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:18,552 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:19,554 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:20,555 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:21,557 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:22,559 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:23,561 INFO yarn.Client: Application report for application_1659444800769_0207 (state: ACCEPTED)
+2022-08-04 07:02:23,905 INFO cluster.YarnClientSchedulerBackend: Add WebUI Filter. org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter, Map(PROXY_HOSTS -> charlie.dm.isds.tugraz.at, PROXY_URI_BASES -> http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0207), /proxy/application_1659444800769_0207
+2022-08-04 07:02:24,562 INFO yarn.Client: Application report for application_1659444800769_0207 (state: RUNNING)
+2022-08-04 07:02:24,563 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 129.27.206.13
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1659589335515
+	 final status: UNDEFINED
+	 tracking URL: http://charlie.dm.isds.tugraz.at:8088/proxy/application_1659444800769_0207/
+	 user: oovcharenko
+2022-08-04 07:02:24,564 INFO cluster.YarnClientSchedulerBackend: Application application_1659444800769_0207 has started running.
+2022-08-04 07:02:24,576 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43807.
+2022-08-04 07:02:24,576 INFO netty.NettyBlockTransferService: Server created on tango.dm.isds.tugraz.at:43807
+2022-08-04 07:02:24,578 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-08-04 07:02:24,586 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 43807, None)
+2022-08-04 07:02:24,592 INFO storage.BlockManagerMasterEndpoint: Registering block manager tango.dm.isds.tugraz.at:43807 with 434.4 MiB RAM, BlockManagerId(driver, tango.dm.isds.tugraz.at, 43807, None)
+2022-08-04 07:02:24,596 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, tango.dm.isds.tugraz.at, 43807, None)
+2022-08-04 07:02:24,597 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, tango.dm.isds.tugraz.at, 43807, None)
+2022-08-04 07:02:24,722 INFO cluster.YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+2022-08-04 07:02:24,813 INFO ui.ServerInfo: Adding filter to /metrics/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:24,816 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@129fd9a6{/metrics/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:30,643 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.16:56086) with ID 2,  ResourceProfileId 0
+2022-08-04 07:02:30,660 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.20:43122) with ID 1,  ResourceProfileId 0
+2022-08-04 07:02:30,718 INFO cluster.YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (129.27.206.19:33792) with ID 3,  ResourceProfileId 0
+2022-08-04 07:02:30,764 INFO cluster.YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+2022-08-04 07:02:30,804 INFO storage.BlockManagerMasterEndpoint: Registering block manager oscar.dm.isds.tugraz.at:46157 with 59.8 GiB RAM, BlockManagerId(2, oscar.dm.isds.tugraz.at, 46157, None)
+2022-08-04 07:02:30,826 INFO storage.BlockManagerMasterEndpoint: Registering block manager sierra.dm.isds.tugraz.at:38939 with 59.8 GiB RAM, BlockManagerId(1, sierra.dm.isds.tugraz.at, 38939, None)
+2022-08-04 07:02:30,881 INFO storage.BlockManagerMasterEndpoint: Registering block manager romeo.dm.isds.tugraz.at:39749 with 59.8 GiB RAM, BlockManagerId(3, romeo.dm.isds.tugraz.at, 39749, None)
+2022-08-04 07:02:30,977 INFO internal.SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2022-08-04 07:02:30,980 INFO internal.SharedState: Warehouse path is 'file:/home/oovcharenko/benchmark/BS_OlgaOvcharenko/spark-warehouse'.
+2022-08-04 07:02:30,996 INFO ui.ServerInfo: Adding filter to /SQL: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:30,998 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@66671bb5{/SQL,null,AVAILABLE,@Spark}
+2022-08-04 07:02:30,999 INFO ui.ServerInfo: Adding filter to /SQL/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:31,000 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2b2d6890{/SQL/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:31,000 INFO ui.ServerInfo: Adding filter to /SQL/execution: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:31,002 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@756946de{/SQL/execution,null,AVAILABLE,@Spark}
+2022-08-04 07:02:31,002 INFO ui.ServerInfo: Adding filter to /SQL/execution/json: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:31,003 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1e0cc1ae{/SQL/execution/json,null,AVAILABLE,@Spark}
+2022-08-04 07:02:31,004 INFO ui.ServerInfo: Adding filter to /static/sql: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+2022-08-04 07:02:31,005 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@514d6981{/static/sql,null,AVAILABLE,@Spark}
+Created integer part 10.372475624084473
+Created data 10.556094884872437
+Num of rows 2048000
+
+ARTICLE_TITLE
+Set values
+Random sample 0.02081012725830078
+Create errors lists sample 1.4820544719696045
+
+JOURNAL_TITLE
+Set values
+Random sample 0.014255046844482422
+Create errors lists sample 1.6286242008209229
+
+JOURNAL_ISSN
+Set values
+Random sample 0.020638704299926758
+Create errors lists sample 1.5601081848144531
+
+ARTICLE_JVOLUMN
+Set values
+Random sample 0.03527545928955078
+Create errors lists sample 1.6109309196472168
+
+ARTICLE_JISSUE
+Set values
+Random sample 0.09727644920349121
+Create errors lists sample 1.7782561779022217
+
+ARTICLE_JCREATED_AT
+Set values
+Random sample 0.7418806552886963
+Create errors lists sample 2.418931722640991
+
+ARTICLE_PAGINATION
+Set values
+Random sample 0.027990102767944336
+Create errors lists sample 1.469010591506958
+
+AUTHOR_LIST
+Set values
+Random sample 0.08708000183105469
+Create errors lists sample 1.0487830638885498
+Create error DATAFRAME  2.3564231395721436
+Create spark obj 2.361259937286377
+Set values after join, TOTAL 2.4289159774780273
+Create error DATAFRAME  0.4323148727416992
+Create spark obj 0.43692755699157715
+Set values after join, TOTAL 0.4781184196472168
+Create error DATAFRAME  0.2675454616546631
+Create spark obj 0.2725074291229248
+Set values after join, TOTAL 0.3161807060241699
+Create error DATAFRAME  0.24235057830810547
+Create spark obj 0.24719786643981934
+Set values after join, TOTAL 0.2988154888153076
+Create error DATAFRAME  0.21589922904968262
+Create spark obj 0.22045397758483887
+Set values after join, TOTAL 0.2631111145019531
+Create error DATAFRAME  0.2159128189086914
+Create spark obj 0.22042012214660645
+Set values after join, TOTAL 0.26169610023498535
+Create error DATAFRAME  0.27292728424072266
+Create spark obj 0.2772252559661865
+Set values after join, TOTAL 0.3169112205505371
+Create error DATAFRAME  0.2303144931793213
+Create spark obj 0.23574376106262207
+Set values after join, TOTAL 0.2758064270019531
+Replacements article_jcreated_at
+REPLACEMENT start
+REPLACEMENT Num repl 	458752
+
+
+REPLACEMENT Create replacement DATAFRAME  38.03639101982117
+REPLACEMENT Create spark obj 38.040767669677734
+REPLACEMENT all 38.07483673095703
+Swaps numerical done
+Swaps str
+Generated dataset
+Save dataset: 323.185834646225
+
+Error distribution computation: 0.15837883949279785
+
+Scale dataset: 38.969672203063965
+
+Errors to scaled dataset: 51.69673681259155
+
+Generated error distribution: 51.35012412071228
+
+--------------------------------------------------------
+id
+Mean original dirty: 	 502095.623
+Mean generated dirty: 	 303663.47670847474
+
+Var original dirty: 	 84434379035.87675
+Var generated dirty: 	 41649888957.33268
+
+Q25 original dirty: 	 247310.25
+Q25 generated dirty: 	 1266.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 501140.5
+Q50 generated dirty: 	 396821.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 756450.0
+Q75 generated dirty: 	 1266.0
+
+INFO: Q75 differs from original dirty data
+
+Min original dirty: 	 1266.0
+Min generated dirty: 	 1266.0
+
+Max original dirty: 	 982590.0
+Max generated dirty: 	 982590.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+article_jvolumn
+Mean original dirty: 	 67.921
+Mean generated dirty: 	 27.963637667177455
+
+Var original dirty: 	 79353.13189089089
+Var generated dirty: 	 16201.940541852502
+
+Q25 original dirty: 	 12.0
+Q25 generated dirty: 	 -1.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 29.0
+Q50 generated dirty: 	 25.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 64.0
+Q75 generated dirty: 	 -1.0
+
+INFO: Q75 differs from original dirty data
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 -1.0
+
+Max original dirty: 	 7457.0
+Max generated dirty: 	 7457.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+article_jissue
+Mean original dirty: 	 47.683
+Mean generated dirty: 	 16.93428664556679
+
+Var original dirty: 	 294679.45396496495
+Var generated dirty: 	 59768.70580573009
+
+Q25 original dirty: 	 0.0
+Q25 generated dirty: 	 -1.0
+
+INFO: Q25 differs from original dirty data
+
+Q50 original dirty: 	 3.0
+Q50 generated dirty: 	 5.0
+
+INFO: Q50 differs from original dirty data
+
+Q75 original dirty: 	 6.0
+Q75 generated dirty: 	 -1.0
+
+INFO: Q75 differs from original dirty data
+
+Min original dirty: 	 0.0
+Min generated dirty: 	 -1.0
+
+Max original dirty: 	 9453.0
+Max generated dirty: 	 9453.0
+
+--------------------------------------------------------
+--------------------------------------------------------
+id
+Distinct original dirty: 	 1000
+Distinct original clean: 	 1000
+Distinct estimated dirty (whole dataset): 	 2048000, distinct with ratio 	 2048000
+Distinct estimated dirty (replicate + errors): 	 1000.0
+Distinct generated dirty: 	 1323
+
+--------------------------------------------------------
+article_language
+Distinct original dirty: 	 34
+Distinct original clean: 	 34
+Distinct estimated dirty (whole dataset): 	 1499, distinct with ratio 	 1499
+Distinct estimated dirty (replicate + errors): 	 34.0
+Distinct generated dirty: 	 34
+
+--------------------------------------------------------
+jounral_abbreviation
+Distinct original dirty: 	 423
+Distinct original clean: 	 423
+Distinct estimated dirty (whole dataset): 	 378171, distinct with ratio 	 378171
+Distinct estimated dirty (replicate + errors): 	 423.0
+Distinct generated dirty: 	 451
+
+--------------------------------------------------------
+article_title
+Distinct original dirty: 	 1000
+Distinct original clean: 	 1000
+Distinct estimated dirty (whole dataset): 	 2048000, distinct with ratio 	 2048000
+Distinct estimated dirty (replicate + errors): 	 29672.0
+Distinct generated dirty: 	 25785
+
+Typos original dirty: 	 14
+Typos generated dirty: 	 28672
+
+Distinct estimated typo: 	 28672
+Unique typos count - original dirty: 	 14
+Unique typos count - generated dirty: 	 28666
+
+--------------------------------------------------------
+journal_title
+Distinct original dirty: 	 718
+Distinct original clean: 	 718
+Distinct estimated dirty (whole dataset): 	 988965, distinct with ratio 	 988965
+Distinct estimated dirty (replicate + errors): 	 19150.0
+Distinct generated dirty: 	 19012
+
+Typos original dirty: 	 9
+Typos generated dirty: 	 18432
+
+Distinct estimated typo: 	 18432
+Unique typos count - original dirty: 	 9
+Unique typos count - generated dirty: 	 18352
+
+--------------------------------------------------------
+journal_issn
+Distinct original dirty: 	 616
+Distinct original clean: 	 616
+Distinct estimated dirty (whole dataset): 	 746538, distinct with ratio 	 746538
+Distinct estimated dirty (replicate + errors): 	 7448.0
+Distinct generated dirty: 	 7148
+
+Typos original dirty: 	 12
+Typos generated dirty: 	 24576
+
+Distinct estimated typo: 	 6832
+Unique typos count - original dirty: 	 8
+Unique typos count - generated dirty: 	 6811
+
+--------------------------------------------------------
+article_jvolumn
+Distinct original dirty: 	 189
+Distinct original clean: 	 189
+Distinct estimated dirty (whole dataset): 	 25883, distinct with ratio 	 25883
+Distinct estimated dirty (replicate + errors): 	 190.0
+Distinct generated dirty: 	 197
+
+MV original dirty: 	 22
+MV generated dirty: 	 45056
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+article_jissue
+Distinct original dirty: 	 41
+Distinct original clean: 	 41
+Distinct estimated dirty (whole dataset): 	 1782, distinct with ratio 	 1782
+Distinct estimated dirty (replicate + errors): 	 42.0
+Distinct generated dirty: 	 37
+
+MV original dirty: 	 53
+MV generated dirty: 	 108544
+
+Distinct estimated mv: 	 1
+Unique MV count - original dirty: 	 1
+Unique MV count - generated dirty: 	 2
+
+--------------------------------------------------------
+article_pagination
+Distinct original dirty: 	 872
+Distinct original clean: 	 871
+Distinct estimated dirty (whole dataset): 	 1526422, distinct with ratio 	 1526422
+Distinct estimated dirty (replicate + errors): 	 66407.0
+Distinct generated dirty: 	 52146
+
+Typos original dirty: 	 32
+Typos generated dirty: 	 65536
+
+Distinct estimated typo: 	 65536
+Unique typos count - original dirty: 	 32
+Unique typos count - generated dirty: 	 57353
+
+--------------------------------------------------------
+author_list
+Distinct original dirty: 	 937
+Distinct original clean: 	 937
+Distinct estimated dirty (whole dataset): 	 1797623, distinct with ratio 	 1797623
+Distinct estimated dirty (replicate + errors): 	 172969.0
+Distinct generated dirty: 	 78023
+
+Typos original dirty: 	 84
+Typos generated dirty: 	 172032
+
+Distinct estimated typo: 	 172032
+Unique typos count - original dirty: 	 84
+Unique typos count - generated dirty: 	 171578
+
+--------------------------------------------------------
+article_jcreated_at
+Distinct original dirty: 	 263
+Distinct original clean: 	 262
+Distinct estimated dirty (whole dataset): 	 86814, distinct with ratio 	 86814
+Distinct estimated dirty (replicate + errors): 	 45519.0
+Distinct generated dirty: 	 46963
+
+Replacements original dirty: 	 224
+Replacements generated dirty: 	 237018
+
+Traceback (most recent call last):
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/test_scale_up_distributed.py", line 23, in <module>
+    generated_data = scale_modify.run_distributed(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/scale_modify.py", line 206, in run_distributed
+    compare_error_dist.compare_error_distributions_statistics_sp(
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/compare_error_dist.py", line 15, in compare_error_distributions_statistics_sp
+    compare_distincts_sp(cols=cols, original=original, generated=generated)
+  File "/home/oovcharenko/benchmark/BS_OlgaOvcharenko/compare_error_dist.py", line 270, in compare_distincts_sp
+    assert round(original.distinct_replacements_count[c] * original.scaling_factor) * 0.9 <= \
+AssertionError: In article_jcreated_at changed replacements distribution, original - 458752, gen - 237018
+
+real	7m51.702s
+user	2m9.995s
+sys	0m13.789s

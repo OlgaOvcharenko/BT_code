@@ -1,0 +1,83 @@
+Rows	 7390
+Cols	 17
+Clean min	 year            1908.0
+rating_value       0.0
+rating_count       0.0
+dtype: float64
+Clean max	 year               2019.0
+rating_value          9.7
+rating_count    1532446.0
+dtype: float64
+Clean mean	 year             1992.650068
+rating_value        6.179892
+rating_count    49442.445332
+dtype: float64
+Clean q25	 year            1983.00
+rating_value       5.60
+rating_count     955.25
+Name: 0.25, dtype: float64
+Clean q50	 year            2000.0
+rating_value       6.5
+rating_count    8033.5
+Name: 0.5, dtype: float64
+Clean q75	 year             2011.0
+rating_value        7.2
+rating_count    49637.0
+Name: 0.75, dtype: float64
+Clean var	 year            5.257000e+02
+rating_value    2.557119e+00
+rating_count    1.136757e+10
+dtype: float64
+Clean kurt	 year             0.581551
+rating_value     5.004097
+rating_count    35.158251
+dtype: float64
+Clean skew	 year           -1.216031
+rating_value   -1.921150
+rating_count    4.831765
+dtype: float64
+
+Dirty min	 year            0.0
+rating_value    0.0
+rating_count    0.0
+dtype: float64
+Dirty max	 year            2019.0
+rating_value       9.7
+rating_count     999.0
+dtype: float64
+Dirty mean	 year            1941.355616
+rating_value       6.016171
+rating_count      78.540866
+dtype: float64
+Dirty q25	 year            1999.0
+rating_value       6.4
+rating_count       0.0
+Name: 0.5, dtype: float64
+Dirty q50	 year            1999.0
+rating_value       6.4
+rating_count       0.0
+Name: 0.5, dtype: float64
+Dirty q75	 year            2010.0
+rating_value       7.2
+rating_count       0.0
+Name: 0.75, dtype: float64
+Dirty var	 year            99985.805582
+rating_value        3.471482
+rating_count    40231.056051
+dtype: float64
+Dirty kurt	 year            33.564960
+rating_value     3.696881
+rating_count     7.398674
+dtype: float64
+Dirty skew	 year           -5.946216
+rating_value   -1.875321
+rating_count    2.851054
+dtype: float64
+
+Clean distincts	 {'id': 7390, 'name': 7198, 'year': 107, 'release_date': 4796, 'director': 3723, 'creator': 6171, 'actors': 7214, 'full_cast': 7308, 'language': 502, 'country': 400, 'duration': 163, 'rating_value': 83, 'rating_count': 5903, 'review_count': 5293, 'genre': 637, 'filming_locations': 3191, 'description': 7261}
+Dirty distincts	 {'id': 7390, 'name': 7199, 'year': 108, 'release_date': 4900, 'director': 3746, 'creator': 6174, 'actors': 7214, 'full_cast': 7308, 'language': 502, 'country': 400, 'duration': 214, 'rating_value': 83, 'rating_count': 742, 'review_count': 5293, 'genre': 717, 'filming_locations': 3191, 'description': 7263}
+Dirty mv	 {'id': 0, 'name': 0, 'year': 190, 'release_date': 0, 'director': 0, 'creator': 0, 'actors': 0, 'full_cast': 0, 'language': 0, 'country': 0, 'duration': 0, 'rating_value': 419, 'rating_count': 5737, 'review_count': 0, 'genre': 0, 'filming_locations': 0, 'description': 0}
+Dirty outliers	 {'id': 0, 'name': 0, 'release_date': 0, 'director': 0, 'creator': 0, 'actors': 0, 'full_cast': 0, 'language': 0, 'country': 0, 'duration': 0, 'review_count': 0, 'genre': 0, 'filming_locations': 0, 'description': 0, 'year': 0, 'rating_value': 0, 'rating_count': 0}
+Dirty typos	 {'id': 190, 'name': 17, 'year': 0, 'release_date': 190, 'director': 42, 'creator': 111, 'actors': 0, 'full_cast': 0, 'language': 0, 'country': 0, 'duration': 107, 'rating_value': 0, 'rating_count': 0, 'review_count': 0, 'genre': 137, 'filming_locations': 0, 'description': 188}
+Dirty swaps	 0
+Dirty replacements	 {'id': 0, 'name': 0, 'year': 0, 'release_date': 0, 'director': 1, 'creator': 18, 'actors': 0, 'full_cast': 0, 'language': 0, 'country': 0, 'duration': 80, 'rating_value': 0, 'rating_count': 0, 'review_count': 0, 'genre': 43, 'filming_locations': 0, 'description': 0}

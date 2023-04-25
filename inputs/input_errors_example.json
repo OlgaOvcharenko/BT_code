@@ -1,0 +1,25 @@
+{
+  "transformations": [
+    {
+      "t_type": "FLIP",
+      "type": "random",
+      "col": 2
+    },
+    {
+      "t_type": "DISTINCT",
+      "col": 5
+    },
+    {
+      "t_type": "SWAP_BETWEEN_COLS",
+      "col1": 1,
+      "col2": 6,
+      "type": "neighbors"
+    },
+    {
+      "t_type": "OUTLIER",
+      "cols": [5, 12],
+      "type": "from_iqr",
+      "num_outliers": 14
+    }
+  ]
+}

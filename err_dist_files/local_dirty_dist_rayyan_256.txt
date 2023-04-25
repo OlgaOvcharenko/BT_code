@@ -1,0 +1,29 @@
+Rows	 256000
+Cols	 11
+Clean min	 None
+Clean max	 None
+Clean mean	 None
+Clean q25	 None
+Clean q50	 None
+Clean q75	 None
+Clean var	 None
+Clean kurt	 None
+Clean skew	 None
+
+Dirty min	 {'id': 1266.0, 'article_jvolumn': -1.0, 'article_jissue': -1.0}
+Dirty max	 {'id': 982590.0, 'article_jvolumn': 7457.0, 'article_jissue': 9453.0}
+Dirty mean	 {'id': 502095.623, 'article_jvolumn': 66.4126484375, 'article_jissue': 44.91989453125}
+Dirty q25	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty q50	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty q75	 {'id': 501140.5, 'article_jvolumn': 28.0, 'article_jissue': 3.0}
+Dirty var	 {'id': 84350274150.09927, 'article_jvolumn': 77382.95584218827, 'article_jissue': 277602.78709790733}
+Dirty kurt	 {'id': -1.2593744676188419, 'article_jvolumn': 493.50975944127583, 'article_jissue': 203.94421690220778}
+Dirty skew	 {'id': -0.05678381768982623, 'article_jvolumn': 19.994423645050713, 'article_jissue': 14.017659535929512}
+
+Clean distincts	 {}
+Dirty distincts	 {'id': 1000, 'article_title': 4578, 'article_language': 34, 'journal_title': 3011, 'jounral_abbreviation': 423, 'journal_issn': 1470, 'article_jvolumn': 190, 'article_jissue': 42, 'article_jcreated_at': 5971, 'article_pagination': 8634, 'author_list': 22384}
+Dirty mv	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 5632, 'article_jissue': 13568, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty outliers	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 0, 'article_pagination': 0, 'author_list': 0}
+Dirty typos	 {'article_title': 3584, 'journal_title': 2304, 'journal_issn': 3072, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 127488, 'article_pagination': 8192, 'author_list': 21504, 'id': 0}
+Dirty swaps	 0
+Dirty replacements	 {'article_title': 0, 'journal_title': 0, 'journal_issn': 0, 'article_jvolumn': 0, 'article_jissue': 0, 'article_jcreated_at': 57344, 'article_pagination': 0, 'author_list': 0}

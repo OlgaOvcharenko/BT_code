@@ -1,0 +1,28 @@
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_beers_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_beers_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_beers_1024.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_hospital_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_hospital_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_hospital_1024.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_movies_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_movies_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_movies_1024.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_rayyan_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_rayyan_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_rayyan_1024.parquet': No such file or directory
+Deleted tmp
+rm: `err_dist_files/distributed_original_dist_flights_1024.txt': No such file or directory
+rm: `err_dist_files/distributed_dirty_dist_flights_1024.txt': No such file or directory
+rm: `generated_datasets/generated_distributed_flights_1024.parquet': No such file or directory
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_beers_2048.txt
+Deleted err_dist_files/distributed_dirty_dist_beers_2048.txt
+Deleted generated_datasets/generated_distributed_beers_2048.parquet
+Deleted tmp
+Deleted err_dist_files/distributed_original_dist_hospital_2048.txt
+Deleted err_dist_files/distributed_dirty_dist_hospital_2048.txt
+Deleted generated_datasets/generated_distributed_hospital_2048.parquet

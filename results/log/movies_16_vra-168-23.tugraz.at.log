@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/./test_scale_up_local.py", line 4, in <module>
+    import scale_modify
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/scale_modify.py", line 6, in <module>
+    import pandas as pd
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/__init__.py", line 145, in <module>
+    from . import core
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/__init__.py", line 102, in <module>
+    from . import _internal
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/_internal.py", line 10, in <module>
+    import platform
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/platform.py", line 119, in <module>
+    import subprocess
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/subprocess.py", line 51, in <module>
+    import threading
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 9, in <module>
+    from _weakrefset import WeakSet
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_weakrefset.py", line 36, in <module>
+    class WeakSet:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/_weakrefset.py", line 202, in WeakSet
+    __class_getitem__ = classmethod(GenericAlias)
+KeyboardInterrupt
+
+real	0m0.081s
+user	0m0.298s
+sys	0m0.068s

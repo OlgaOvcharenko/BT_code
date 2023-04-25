@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/./test_scale_up_local.py", line 4, in <module>
+    import scale_modify
+  File "/Users/olga_ovcharenko/PycharmProjects/BS_OlgaOvcharenko/scale_modify.py", line 6, in <module>
+    import pandas as pd
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/__init__.py", line 145, in <module>
+    from . import core
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/__init__.py", line 98, in <module>
+    from . import _add_newdocs
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/_add_newdocs.py", line 6213, in <module>
+    add_newdoc('numpy.core.numerictypes', 'generic',
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/numpy/core/function_base.py", line 521, in add_newdoc
+    new = getattr(__import__(place, globals(), {}, [obj]), obj)
+KeyboardInterrupt
+
+real	0m0.083s
+user	0m0.289s
+sys	0m0.068s

@@ -1,0 +1,47 @@
+Rows	 2376
+Cols	 7
+Clean min	 tuple_id    1
+dtype: int64
+Clean max	 tuple_id    2376
+dtype: int64
+Clean mean	 tuple_id    1188.5
+dtype: float64
+Clean q25	 tuple_id    594.75
+Name: 0.25, dtype: float64
+Clean q50	 tuple_id    1188.5
+Name: 0.5, dtype: float64
+Clean q75	 tuple_id    1782.25
+Name: 0.75, dtype: float64
+Clean var	 tuple_id    470646.0
+dtype: float64
+Clean kurt	 tuple_id   -1.2
+dtype: float64
+Clean skew	 tuple_id    0.0
+dtype: float64
+
+Dirty min	 tuple_id    1
+dtype: int64
+Dirty max	 tuple_id    2376
+dtype: int64
+Dirty mean	 tuple_id    1188.5
+dtype: float64
+Dirty q25	 tuple_id    1188.5
+Name: 0.5, dtype: float64
+Dirty q50	 tuple_id    1188.5
+Name: 0.5, dtype: float64
+Dirty q75	 tuple_id    1782.25
+Name: 0.75, dtype: float64
+Dirty var	 tuple_id    470646.0
+dtype: float64
+Dirty kurt	 tuple_id   -1.2
+dtype: float64
+Dirty skew	 tuple_id    0.0
+dtype: float64
+
+Clean distincts	 {'tuple_id': 2376, 'src': 38, 'flight': 100, 'sched_dep_time': 79, 'act_dep_time': 91, 'sched_arr_time': 94, 'act_arr_time': 96}
+Dirty distincts	 {'tuple_id': 2376, 'src': 38, 'flight': 100, 'sched_dep_time': 138, 'act_dep_time': 291, 'sched_arr_time': 240, 'act_arr_time': 329}
+Dirty mv	 {'tuple_id': 0, 'src': 0, 'flight': 0, 'sched_dep_time': 0, 'act_dep_time': 0, 'sched_arr_time': 0, 'act_arr_time': 0}
+Dirty outliers	 {'src': 0, 'flight': 0, 'sched_dep_time': 0, 'act_dep_time': 0, 'sched_arr_time': 0, 'act_arr_time': 0, 'tuple_id': 0}
+Dirty typos	 {'tuple_id': 0, 'src': 0, 'flight': 0, 'sched_dep_time': 893, 'act_dep_time': 1350, 'sched_arr_time': 1080, 'act_arr_time': 1283}
+Dirty swaps	 0
+Dirty replacements	 {'tuple_id': 0, 'src': 0, 'flight': 0, 'sched_dep_time': 18, 'act_dep_time': 208, 'sched_arr_time': 20, 'act_arr_time': 68}
